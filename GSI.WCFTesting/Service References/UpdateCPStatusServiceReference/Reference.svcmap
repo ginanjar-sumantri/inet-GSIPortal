@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cb1025a6-a592-483a-9c09-2e57012c01fd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.88.6:51000/UpdateCPStatusService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UpdateCPStatusService.xsd" MetadataType="Schema" ID="5856880a-446b-47b0-880f-1b2cefed5b18" SourceId="1" SourceUrl="http://192.168.88.6:51000/UpdateCPStatusService.svc?xsd=xsd1" />
+    <MetadataFile FileName="UpdateCPStatusService1.xsd" MetadataType="Schema" ID="b0d399bd-454c-4b0d-900d-52a7b70ff047" SourceId="1" SourceUrl="http://192.168.88.6:51000/UpdateCPStatusService.svc?xsd=xsd2" />
+    <MetadataFile FileName="UpdateCPStatusService.disco" MetadataType="Disco" ID="fa0b8cb6-ee05-4213-9a91-82a46497886e" SourceId="1" SourceUrl="http://192.168.88.6:51000/UpdateCPStatusService.svc?disco" />
+    <MetadataFile FileName="UpdateCPStatusService.wsdl" MetadataType="Wsdl" ID="d0403a56-bf0e-4bdd-b679-b569a7567cbc" SourceId="1" SourceUrl="http://192.168.88.6:51000/UpdateCPStatusService.svc?wsdl" />
+    <MetadataFile FileName="UpdateCPStatusService2.xsd" MetadataType="Schema" ID="3bfd9869-9dc6-43d2-8639-bac979539eb4" SourceId="1" SourceUrl="http://192.168.88.6:51000/UpdateCPStatusService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

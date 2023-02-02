@@ -1,0 +1,14 @@
+<Modules>
+  <Module PersistentId="913D1473-FB28-4962-89A7-55DF06281733" ModuleId="GSIWebsiteApp" />
+  <Module PersistentId="AA7049EA-3CD0-4786-95E5-664C333D0D57" ModuleId="GSI.Common" />
+  <Module PersistentId="6C6FDC5C-9946-4F79-B763-CD05480F94A1" ModuleId="GSI.BusinessRule" />
+  <Module PersistentId="451F06B7-2E49-46A0-AF9C-C0F12B7FFF0B" ModuleId="GSI.BusinessRuleCore" />
+  <Module PersistentId="70BA38EC-724E-42AF-B45E-F9F2ECC94564" ModuleId="GSI.DataMapping" />
+  <Module PersistentId="062D7DD9-6814-4366-BBFF-7E8CFD816DB9" ModuleId="GSI.BusinessEntity" />
+  <Module PersistentId="EA24EEA8-FF70-4BA6-B77A-AAC2A0CED9E3" ModuleId="GSIWebsiteCore" />
+  <Module PersistentId="8A91CE79-5686-4CA2-8DF1-E5CABC2E42DA" ModuleId="GSI.WCFToCoreSystem" />
+  <Module PersistentId="96849D0A-B2A4-4A00-826E-39A309F7FF59" ModuleId="GSI.WCFToCustomerPortal" />
+  <Module PersistentId="85397566-E61D-4773-84D8-E123E4691C77" ModuleId="GSI.WCFTesting" />
+  <Module PersistentId="828B1EBD-21CF-4E98-8846-7DFAE89861B9" ModuleId="GSI.Authentication" />
+  <Module PersistentId="0984FEC1-05CC-4D12-BE4C-DA1262097D49" ModuleId="GSI.SystemConfig" />
+</Modules>

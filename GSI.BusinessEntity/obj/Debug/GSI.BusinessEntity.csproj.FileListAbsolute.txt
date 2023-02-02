@@ -1,0 +1,9 @@
+D:\GSI\GSIPortal\GSI.BusinessEntity\bin\Debug\GSI.BusinessEntity.dll
+D:\GSI\GSIPortal\GSI.BusinessEntity\bin\Debug\GSI.BusinessEntity.pdb
+D:\GSI\GSIPortal\GSI.BusinessEntity\obj\Debug\ResolveAssemblyReference.cache
+D:\GSI\GSIPortal\GSI.BusinessEntity\obj\Debug\GSI.BusinessEntity.dll
+D:\GSI\GSIPortal\GSI.BusinessEntity\obj\Debug\GSI.BusinessEntity.pdb
+E:\GSIPortal\GSI.BusinessEntity\bin\Debug\GSI.BusinessEntity.dll
+E:\GSIPortal\GSI.BusinessEntity\bin\Debug\GSI.BusinessEntity.pdb
+E:\GSIPortal\GSI.BusinessEntity\obj\Debug\GSI.BusinessEntity.dll
+E:\GSIPortal\GSI.BusinessEntity\obj\Debug\GSI.BusinessEntity.pdb

@@ -1,0 +1,14 @@
+D:\GSI\GSIPortal\GSI.Authentication\bin\Debug\GSI.Authentication.dll
+D:\GSI\GSIPortal\GSI.Authentication\bin\Debug\GSI.Authentication.pdb
+D:\GSI\GSIPortal\GSI.Authentication\bin\Debug\GSI.SystemConfig.dll
+D:\GSI\GSIPortal\GSI.Authentication\bin\Debug\GSI.SystemConfig.pdb
+D:\GSI\GSIPortal\GSI.Authentication\obj\Debug\ResolveAssemblyReference.cache
+D:\GSI\GSIPortal\GSI.Authentication\obj\Debug\GSI.Authentication.dll
+D:\GSI\GSIPortal\GSI.Authentication\obj\Debug\GSI.Authentication.pdb
+E:\GSIPortal\GSI.Authentication\bin\Debug\GSI.Authentication.dll
+E:\GSIPortal\GSI.Authentication\bin\Debug\GSI.Authentication.pdb
+E:\GSIPortal\GSI.Authentication\bin\Debug\GSI.SystemConfig.dll
+E:\GSIPortal\GSI.Authentication\bin\Debug\GSI.SystemConfig.pdb
+E:\GSIPortal\GSI.Authentication\obj\Debug\GSI.Authentication.dll
+E:\GSIPortal\GSI.Authentication\obj\Debug\GSI.Authentication.pdb
+E:\GSIPortal\GSI.Authentication\obj\Debug\GSI.Authentication.csprojResolveAssemblyReference.cache

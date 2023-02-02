@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4893/SyncMasterService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/GSI.WCFToCustomerPortal" />
+  <xs:element name="UpdateMsRegion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/GSI.WCFToCustomerPortal" minOccurs="0" name="_prmMsRegion" nillable="true" type="q1:ArrayOfMsRegion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateMsRegionResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateMsCustomer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/GSI.WCFToCustomerPortal" minOccurs="0" name="_prmMsCustomer" nillable="true" type="q2:ArrayOfMsCustomer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateMsCustomerResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateMsCustomerUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/GSI.WCFToCustomerPortal" minOccurs="0" name="_prmMsCustomerUser" nillable="true" type="q3:ArrayOfMsCustomerUser" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateMsCustomerUserResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateMsRegionZipCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/GSI.WCFToCustomerPortal" minOccurs="0" name="_prmMsRegionZipCode" nillable="true" type="q4:ArrayOfMsRegionZipCode" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateMsRegionZipCodeResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DoWork">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DoWorkResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListGenLoginHistory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_prmPageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="_prmPageNumb" type="xs:int" />
+        <xs:element minOccurs="0" name="_prmFieldName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_prmFieldValue" type="xs:long" />
+        <xs:element minOccurs="0" name="_prmOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_prmAscDesc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_countData" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListGenLoginHistoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/GSI.WCFToCustomerPortal" minOccurs="0" name="GetListGenLoginHistoryResult" nillable="true" type="q5:ArrayOfGen_LoginHistory" />
+        <xs:element minOccurs="0" name="_countData" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,905 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EA24EEA8-FF70-4BA6-B77A-AAC2A0CED9E3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GSIWebsiteCore</RootNamespace>
+    <AssemblyName>GSIWebsiteCore</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AntiXSSLibrary">
+      <HintPath>C:\Program Files\Microsoft Information Security\Microsoft Anti-Cross Site Scripting Library v3.1\Sample Application\bin\AntiXSSLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="AntiXssModule">
+      <HintPath>C:\Program Files\Microsoft Information Security\Microsoft Anti-Cross Site Scripting Library v3.1\Sample Application\bin\AntiXssModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Battery\AddBattery.aspx" />
+    <Content Include="Battery\ListBattery.aspx" />
+    <Content Include="Battery\ViewBattery.aspx" />
+    <Content Include="Brand\AddBrand.aspx" />
+    <Content Include="Brand\ListBrand.aspx" />
+    <Content Include="Brand\ViewBrand.aspx" />
+    <Content Include="contents\images\bg_accordion.png" />
+    <Content Include="contents\images\btnActivate.png" />
+    <Content Include="contents\images\btnActivateUser.png" />
+    <Content Include="contents\images\btnAdd2.png" />
+    <Content Include="contents\images\btnAssign.png" />
+    <Content Include="contents\images\btnAssign_small2.png" />
+    <Content Include="contents\images\btnBack.png" />
+    <Content Include="contents\images\btnCancel2.png" />
+    <Content Include="contents\images\btnDisable.png" />
+    <Content Include="contents\images\btnDisableUser.png" />
+    <Content Include="contents\images\btnDrop.png" />
+    <Content Include="contents\images\btnEdit.png" />
+    <Content Include="contents\images\btnPreview.png" />
+    <Content Include="contents\images\btnPreview2.png" />
+    <Content Include="contents\images\btnRegion.png" />
+    <Content Include="contents\images\btnReset.png" />
+    <Content Include="contents\images\btnSave2.png" />
+    <Content Include="contents\images\btnSubmit2.png" />
+    <Content Include="contents\images\btnSurveyor.png" />
+    <Content Include="contents\images\btnSyncToCustomerPortal.png" />
+    <Content Include="contents\images\Correction.png" />
+    <Content Include="contents\images\googleMapsIcon.jpg" />
+    <Content Include="contents\images\icon_appr_drop.png" />
+    <Content Include="contents\images\icon_assign.png" />
+    <Content Include="contents\images\icon_drop.png" />
+    <Content Include="contents\images\Icon_Publish.png" />
+    <Content Include="contents\images\Icon_TakeOver.png" />
+    <Content Include="contents\images\icon_view.png" />
+    <Content Include="contents\images\PreviewReport.png" />
+    <Content Include="contents\images\remarkicon.jpg" />
+    <Content Include="contents\images\WoRef.png" />
+    <Content Include="contents\javascripts\calendar.js" />
+    <Content Include="contents\javascripts\JScript.js" />
+    <Content Include="contents\jQuery\calendar.js" />
+    <Content Include="contents\jQuery\jquery-1.3.2.js" />
+    <Content Include="contents\jQuery\jquery-1.3.2.min.js" />
+    <Content Include="contents\jQuery\jquery-1.4.2.min.js" />
+    <Content Include="contents\jQuery\jquery-1.4.3.min.js" />
+    <Content Include="contents\jQuery\jquery-1.4.4-vsdoc.js" />
+    <Content Include="contents\jQuery\jquery-1.4.4.js" />
+    <Content Include="contents\jQuery\jquery-1.4.4.min.js" />
+    <Content Include="contents\jQuery\jquery-1.5.1.js" />
+    <Content Include="contents\jQuery\jquery.fancybox-1.3.4.pack.js" />
+    <Content Include="contents\jQuery\jquery.infinite-carousel.js" />
+    <Content Include="contents\jQuery\jquery.jcarousel.js" />
+    <Content Include="contents\jQuery\jquery.jcarousel.min.js" />
+    <Content Include="contents\jQuery\jquery.js" />
+    <Content Include="contents\jQuery\jquery.mousewheel-3.0.4.pack.js" />
+    <Content Include="contents\jQuery\jquery.toastmessage.js" />
+    <Content Include="contents\jQuery\jquery.ui.core.js" />
+    <Content Include="contents\jQuery\jquery.ui.potato.menu.js" />
+    <Content Include="contents\jQuery\jquery.ui.tabs.js" />
+    <Content Include="contents\jQuery\jquery.ui.widget.js" />
+    <Content Include="contents\jQuery\JScript.js" />
+    <Content Include="contents\jQuery\Resources\Css\demos.css" />
+    <Content Include="contents\jQuery\Resources\Css\jquery.fancybox-1.3.4.css" />
+    <Content Include="contents\jQuery\Resources\Css\jquery.toastmessage.css" />
+    <Content Include="contents\jQuery\Resources\Css\jquery.ui.potato.menu.css" />
+    <Content Include="contents\jQuery\Resources\Css\jquery.ui.tabs.css" />
+    <Content Include="contents\jQuery\Resources\Css\jquery.ui.theme.css" />
+    <Content Include="contents\jQuery\Resources\Css\periscope-theme-switcher.css" />
+    <Content Include="contents\jQuery\Resources\Css\simple-list.css" />
+    <Content Include="contents\jQuery\Resources\Css\skin.css" />
+    <Content Include="contents\jQuery\Resources\Css\style.css" />
+    <Content Include="contents\jQuery\Resources\Css\stylelightbox.css" />
+    <Content Include="contents\jQuery\Resources\images\close.gif" />
+    <Content Include="contents\jQuery\Resources\images\error.png" />
+    <Content Include="contents\jQuery\Resources\images\fleche-carrousel-droite.png" />
+    <Content Include="contents\jQuery\Resources\images\fleche-carrousel-gauche.png" />
+    <Content Include="contents\jQuery\Resources\images\lightbox\blank.gif" />
+    <Content Include="contents\jQuery\Resources\images\lightbox\fancybox-x.png" />
+    <Content Include="contents\jQuery\Resources\images\lightbox\fancybox-y.png" />
+    <Content Include="contents\jQuery\Resources\images\lightbox\fancybox.png" />
+    <Content Include="contents\jQuery\Resources\images\lightbox\fancy_close.png" />
+    <Content Include="contents\jQuery\Resources\images\lightbox\fancy_loading.png" />
+    <Content Include="contents\jQuery\Resources\images\lightbox\fancy_nav_left.png" />
+    <Content Include="contents\jQuery\Resources\images\lightbox\fancy_nav_right.png" />
+    <Content Include="contents\jQuery\Resources\images\lightbox\fancy_shadow_e.png" />
+    <Content Include="contents\jQuery\Resources\images\lightbox\fancy_shadow_n.png" />
+    <Content Include="contents\jQuery\Resources\images\lightbox\fancy_shadow_ne.png" />
+    <Content Include="contents\jQuery\Resources\images\lightbox\fancy_shadow_nw.png" />
+    <Content Include="contents\jQuery\Resources\images\lightbox\fancy_shadow_s.png" />
+    <Content Include="contents\jQuery\Resources\images\lightbox\fancy_shadow_se.png" />
+    <Content Include="contents\jQuery\Resources\images\lightbox\fancy_shadow_sw.png" />
+    <Content Include="contents\jQuery\Resources\images\lightbox\fancy_shadow_w.png" />
+    <Content Include="contents\jQuery\Resources\images\lightbox\fancy_title_left.png" />
+    <Content Include="contents\jQuery\Resources\images\lightbox\fancy_title_main.png" />
+    <Content Include="contents\jQuery\Resources\images\lightbox\fancy_title_over.png" />
+    <Content Include="contents\jQuery\Resources\images\lightbox\fancy_title_right.png" />
+    <Content Include="contents\jQuery\Resources\images\next-horizontal.png" />
+    <Content Include="contents\jQuery\Resources\images\next-vertical.png" />
+    <Content Include="contents\jQuery\Resources\images\notice.png" />
+    <Content Include="contents\jQuery\Resources\images\prev-horizontal.png" />
+    <Content Include="contents\jQuery\Resources\images\prev-vertical.png" />
+    <Content Include="contents\jQuery\Resources\images\success.png" />
+    <Content Include="contents\jQuery\Resources\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="contents\jQuery\Resources\images\warning.png" />
+    <Content Include="antixssmodule.config" />
+    <None Include="Service References\SyncMasterServiceReference\SyncMasterService.disco" />
+    <None Include="Service References\SyncMasterServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\SyncMasterServiceReference\configuration.svcinfo" />
+    <None Include="Service References\SyncMasterServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Dashboard\DashboardMonitorBySurveyor.aspx" />
+    <Content Include="Dashboard\DashboardMonitorByRegion.aspx" />
+    <Content Include="Dashboard\DashboardMonitor.aspx" />
+    <Content Include="Report\ReportGSI.aspx" />
+    <Content Include="UserHistory\ListUserHistory.aspx" />
+    <Content Include="CustomerUser\AddCustomerUser.aspx" />
+    <Content Include="CustomerUser\CustomerUser.aspx" />
+    <Content Include="CustomerUser\ViewCustomerUser.aspx" />
+    <Content Include="Customer\AddCustomer.aspx" />
+    <Content Include="Customer\Customer.aspx" />
+    <Content Include="Customer\ViewCustomer.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="DocumentType\AddDocumentType.aspx" />
+    <Content Include="DocumentType\ListDocumentType.aspx" />
+    <Content Include="DocumentType\ViewDocumentType.aspx" />
+    <Content Include="Employee\AddEmployee.aspx" />
+    <Content Include="Employee\ListEmployee.aspx" />
+    <Content Include="Employee\ViewEmployee.aspx" />
+    <Content Include="contents\web.config" />
+    <Content Include="contents\images\web.config" />
+    <Content Include="contents\images\login\web.config" />
+    <None Include="Service References\SyncMasterServiceReference\SyncMasterService.wsdl" />
+    <None Include="Service References\SyncMasterServiceReference\SyncMasterService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SyncMasterServiceReference\SyncMasterService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SyncMasterServiceReference\SyncMasterService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateCPResultServiceReference\UpdateCPResultService1.wsdl" />
+    <None Include="Service References\UpdateCPResultServiceReference\UpdateCPResultService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateCPResultServiceReference\UpdateCPResultService31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateCPResultServiceReference\UpdateCPResultService32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateCPStatusServiceReference\UpdateCPStatusService.disco" />
+    <None Include="Service References\UpdateCPResultServiceReference\UpdateCPResultService1.disco" />
+    <Content Include="ZipCode\AddZipCode.aspx" />
+    <Content Include="ZipCode\ListRegion.aspx" />
+    <None Include="Service References\MobileSystemWorkOrderServices\WorkOrder.wsdl" />
+    <None Include="Service References\MobileSystemWorkOrderServices\WorkOrder.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MobileSystemWorkOrderServices\WorkOrder1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MobileSystemWorkOrderServices\WorkOrder2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MobileSystemWorkOrderServices\WorkOrder3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateCPStatusServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\UpdateCPStatusServiceReference\configuration.svcinfo" />
+    <None Include="Service References\UpdateCPStatusServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\UpdateCPResultServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\UpdateCPResultServiceReference\configuration.svcinfo" />
+    <None Include="Service References\UpdateCPResultServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\MobileSystemWorkOrderServices\WorkOrder.disco" />
+    <None Include="Service References\MobileSystemWorkOrderServices\configuration91.svcinfo" />
+    <None Include="Service References\MobileSystemWorkOrderServices\configuration.svcinfo" />
+    <None Include="Service References\MobileSystemWorkOrderServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Gadget\AddGadget.aspx" />
+    <Content Include="Gadget\ListGadget.aspx" />
+    <Content Include="Gadget\ViewGadget.aspx" />
+    <Content Include="Operator\AddOperator.aspx" />
+    <Content Include="Operator\ListOperator.aspx" />
+    <Content Include="Operator\ViewOperator.aspx" />
+    <Content Include="Surveyor\AddSurveyor.aspx" />
+    <Content Include="Region\AddRegion.aspx" />
+    <Content Include="Region\ListRegion.aspx" />
+    <Content Include="Region\ViewRegion.aspx" />
+    <Content Include="SIMCard\AddSIMCard.aspx" />
+    <Content Include="SIMCard\ListSIMCard.aspx" />
+    <Content Include="SIMCard\ViewSIMCard.aspx" />
+    <Content Include="Surveyor\Surveyor.aspx" />
+    <Content Include="Surveyor\ViewSurveyor.aspx" />
+    <Content Include="SurveyPoint\ListSurveyPoint.aspx" />
+    <Content Include="SurveyPoint\ViewSurveyPoint.aspx" />
+    <Content Include="User\AddUser.aspx" />
+    <Content Include="User\EditUser.aspx" />
+    <Content Include="User\ListUser.aspx" />
+    <Content Include="User\ViewUser.aspx" />
+    <Content Include="WorkOrder\AddWorkOrderAssign.aspx" />
+    <Content Include="WorkOrder\ListWorkOrder.aspx" />
+    <Content Include="contents\CaptchaImage.aspx" />
+    <Content Include="contents\css\calendar.css" />
+    <Content Include="contents\css\MainStyleSheet.css" />
+    <Content Include="contents\css\style.css" />
+    <Content Include="contents\images\Bg_headerMaster.png" />
+    <Content Include="contents\images\btnAddSurveyPoint2.png" />
+    <Content Include="contents\images\btnDrop_small2.jpg" />
+    <Content Include="contents\images\btnGO2.jpg" />
+    <Content Include="contents\images\btnResult_small.png" />
+    <Content Include="contents\images\btnSubmit_small2.jpg" />
+    <Content Include="contents\images\btnView_small2.jpg" />
+    <Content Include="contents\images\CompanyName_master.png" />
+    <Content Include="contents\images\icon_blue.png" />
+    <Content Include="contents\images\icon_folder_master.png" />
+    <Content Include="contents\images\icon_home_master.png" />
+    <Content Include="contents\images\icon_logout_master.png" />
+    <Content Include="contents\images\icon_profile_master.png" />
+    <Content Include="contents\images\icon_setting_master.png" />
+    <Content Include="contents\images\login\bodyLoginBox.jpg" />
+    <Content Include="contents\images\login\borderLoginBoxL.png" />
+    <Content Include="contents\images\login\borderLoginBoxR.png" />
+    <Content Include="contents\images\login\btnLogin.png" />
+    <Content Include="contents\images\login\btnRCaptcha.png" />
+    <Content Include="contents\images\login\loginPageBorder.jpg" />
+    <Content Include="contents\images\login\loginShadow.jpg" />
+    <Content Include="contents\images\login\logoGSI.png" />
+    <Content Include="contents\images\logo_master.png" />
+    <Content Include="ForgotPassword.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WorkOrder\ViewWorkOrderOffice.aspx" />
+    <Content Include="WorkOrder\ViewWorkOrderPersonal.aspx" />
+    <Content Include="WorkOrder\ViewWorkOrderSurveyPoint.aspx" />
+    <None Include="Service References\UpdateCPStatusServiceReference\UpdateCPStatusService.wsdl" />
+    <None Include="Service References\UpdateCPStatusServiceReference\UpdateCPStatusService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateCPStatusServiceReference\UpdateCPStatusService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateCPStatusServiceReference\UpdateCPStatusService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationClass\BatteryBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationClass\BrandBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationClass\DashboardBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationClass\ReportBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationClass\UserHistoryBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationClass\DocumentTypeBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationClass\OperatorBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationClass\ZipCodeBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationClass\UserBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationClass\CustomerUserBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationClass\GadgetBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationClass\CustomerBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationClass\SIMCardBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationClass\RegionBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationClass\SurveyorBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationClass\EmployeeBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationClass\SurveyPointBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationClass\WorkOrderBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationClass\Base.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationClass\LoginBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationClass\LogoutBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Battery\AddBattery.aspx.cs">
+      <DependentUpon>AddBattery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Battery\AddBattery.aspx.designer.cs">
+      <DependentUpon>AddBattery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Battery\ListBattery.aspx.cs">
+      <DependentUpon>ListBattery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Battery\ListBattery.aspx.designer.cs">
+      <DependentUpon>ListBattery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Battery\ViewBattery.aspx.cs">
+      <DependentUpon>ViewBattery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Battery\ViewBattery.aspx.designer.cs">
+      <DependentUpon>ViewBattery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Brand\AddBrand.aspx.cs">
+      <DependentUpon>AddBrand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Brand\AddBrand.aspx.designer.cs">
+      <DependentUpon>AddBrand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Brand\ListBrand.aspx.cs">
+      <DependentUpon>ListBrand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Brand\ListBrand.aspx.designer.cs">
+      <DependentUpon>ListBrand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Brand\ViewBrand.aspx.cs">
+      <DependentUpon>ViewBrand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Brand\ViewBrand.aspx.designer.cs">
+      <DependentUpon>ViewBrand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\DashboardMonitorBySurveyor.aspx.cs">
+      <DependentUpon>DashboardMonitorBySurveyor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\DashboardMonitorBySurveyor.aspx.designer.cs">
+      <DependentUpon>DashboardMonitorBySurveyor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\DashboardMonitorByRegion.aspx.cs">
+      <DependentUpon>DashboardMonitorByRegion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\DashboardMonitorByRegion.aspx.designer.cs">
+      <DependentUpon>DashboardMonitorByRegion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\DashboardMonitor.aspx.cs">
+      <DependentUpon>DashboardMonitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\DashboardMonitor.aspx.designer.cs">
+      <DependentUpon>DashboardMonitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportGSI.aspx.cs">
+      <DependentUpon>ReportGSI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\ReportGSI.aspx.designer.cs">
+      <DependentUpon>ReportGSI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SyncMasterServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="UserHistory\ListUserHistory.aspx.cs">
+      <DependentUpon>ListUserHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserHistory\ListUserHistory.aspx.designer.cs">
+      <DependentUpon>ListUserHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerUser\AddCustomerUser.aspx.cs">
+      <DependentUpon>AddCustomerUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerUser\AddCustomerUser.aspx.designer.cs">
+      <DependentUpon>AddCustomerUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerUser\CustomerUser.aspx.cs">
+      <DependentUpon>CustomerUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerUser\CustomerUser.aspx.designer.cs">
+      <DependentUpon>CustomerUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerUser\ViewCustomerUser.aspx.cs">
+      <DependentUpon>ViewCustomerUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerUser\ViewCustomerUser.aspx.designer.cs">
+      <DependentUpon>ViewCustomerUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\AddCustomer.aspx.cs">
+      <DependentUpon>AddCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\AddCustomer.aspx.designer.cs">
+      <DependentUpon>AddCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Customer.aspx.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\Customer.aspx.designer.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\ViewCustomer.aspx.cs">
+      <DependentUpon>ViewCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\ViewCustomer.aspx.designer.cs">
+      <DependentUpon>ViewCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentType\AddDocumentType.aspx.cs">
+      <DependentUpon>AddDocumentType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocumentType\AddDocumentType.aspx.designer.cs">
+      <DependentUpon>AddDocumentType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentType\ListDocumentType.aspx.cs">
+      <DependentUpon>ListDocumentType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocumentType\ListDocumentType.aspx.designer.cs">
+      <DependentUpon>ListDocumentType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentType\ViewDocumentType.aspx.cs">
+      <DependentUpon>ViewDocumentType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocumentType\ViewDocumentType.aspx.designer.cs">
+      <DependentUpon>ViewDocumentType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\AddEmployee.aspx.cs">
+      <DependentUpon>AddEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\AddEmployee.aspx.designer.cs">
+      <DependentUpon>AddEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\ListEmployee.aspx.cs">
+      <DependentUpon>ListEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\ListEmployee.aspx.designer.cs">
+      <DependentUpon>ListEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\ViewEmployee.aspx.cs">
+      <DependentUpon>ViewEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\ViewEmployee.aspx.designer.cs">
+      <DependentUpon>ViewEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gadget\AddGadget.aspx.cs">
+      <DependentUpon>AddGadget.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gadget\AddGadget.aspx.designer.cs">
+      <DependentUpon>AddGadget.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gadget\ListGadget.aspx.cs">
+      <DependentUpon>ListGadget.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gadget\ListGadget.aspx.designer.cs">
+      <DependentUpon>ListGadget.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gadget\ViewGadget.aspx.cs">
+      <DependentUpon>ViewGadget.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gadget\ViewGadget.aspx.designer.cs">
+      <DependentUpon>ViewGadget.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operator\AddOperator.aspx.cs">
+      <DependentUpon>AddOperator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operator\AddOperator.aspx.designer.cs">
+      <DependentUpon>AddOperator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operator\ListOperator.aspx.cs">
+      <DependentUpon>ListOperator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operator\ListOperator.aspx.designer.cs">
+      <DependentUpon>ListOperator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operator\ViewOperator.aspx.cs">
+      <DependentUpon>ViewOperator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operator\ViewOperator.aspx.designer.cs">
+      <DependentUpon>ViewOperator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MobileSystemWorkOrderServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UpdateCPResultServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UpdateCPStatusServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Surveyor\AddSurveyor.aspx.cs">
+      <DependentUpon>AddSurveyor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Surveyor\AddSurveyor.aspx.designer.cs">
+      <DependentUpon>AddSurveyor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Region\AddRegion.aspx.cs">
+      <DependentUpon>AddRegion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Region\AddRegion.aspx.designer.cs">
+      <DependentUpon>AddRegion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Region\ListRegion.aspx.cs">
+      <DependentUpon>ListRegion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Region\ListRegion.aspx.designer.cs">
+      <DependentUpon>ListRegion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Region\ViewRegion.aspx.cs">
+      <DependentUpon>ViewRegion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Region\ViewRegion.aspx.designer.cs">
+      <DependentUpon>ViewRegion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SIMCard\AddSIMCard.aspx.cs">
+      <DependentUpon>AddSIMCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SIMCard\AddSIMCard.aspx.designer.cs">
+      <DependentUpon>AddSIMCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SIMCard\ListSIMCard.aspx.cs">
+      <DependentUpon>ListSIMCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SIMCard\ListSIMCard.aspx.designer.cs">
+      <DependentUpon>ListSIMCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SIMCard\ViewSIMCard.aspx.cs">
+      <DependentUpon>ViewSIMCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SIMCard\ViewSIMCard.aspx.designer.cs">
+      <DependentUpon>ViewSIMCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Surveyor\Surveyor.aspx.cs">
+      <DependentUpon>Surveyor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Surveyor\Surveyor.aspx.designer.cs">
+      <DependentUpon>Surveyor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Surveyor\ViewSurveyor.aspx.cs">
+      <DependentUpon>ViewSurveyor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Surveyor\ViewSurveyor.aspx.designer.cs">
+      <DependentUpon>ViewSurveyor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SurveyPoint\ListSurveyPoint.aspx.cs">
+      <DependentUpon>ListSurveyPoint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SurveyPoint\ListSurveyPoint.aspx.designer.cs">
+      <DependentUpon>ListSurveyPoint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SurveyPoint\ViewSurveyPoint.aspx.cs">
+      <DependentUpon>ViewSurveyPoint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SurveyPoint\ViewSurveyPoint.aspx.designer.cs">
+      <DependentUpon>ViewSurveyPoint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\EditUser.aspx.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\EditUser.aspx.designer.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ListUser.aspx.cs">
+      <DependentUpon>ListUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ListUser.aspx.designer.cs">
+      <DependentUpon>ListUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ViewUser.aspx.cs">
+      <DependentUpon>ViewUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ViewUser.aspx.designer.cs">
+      <DependentUpon>ViewUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrder\AddWorkOrderAssign.aspx.cs">
+      <DependentUpon>AddWorkOrderAssign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkOrder\AddWorkOrderAssign.aspx.designer.cs">
+      <DependentUpon>AddWorkOrderAssign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrder\ListWorkOrder.aspx.cs">
+      <DependentUpon>ListWorkOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkOrder\ListWorkOrder.aspx.designer.cs">
+      <DependentUpon>ListWorkOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contents\CaptchaImage.aspx.cs">
+      <DependentUpon>CaptchaImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contents\CaptchaImage.aspx.designer.cs">
+      <DependentUpon>CaptchaImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contents\GenerateImages.cs" />
+    <Compile Include="Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkOrder\ViewWorkOrderOffice.aspx.cs">
+      <DependentUpon>ViewWorkOrderOffice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkOrder\ViewWorkOrderOffice.aspx.designer.cs">
+      <DependentUpon>ViewWorkOrderOffice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrder\ViewWorkOrderPersonal.aspx.cs">
+      <DependentUpon>ViewWorkOrderPersonal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkOrder\ViewWorkOrderPersonal.aspx.designer.cs">
+      <DependentUpon>ViewWorkOrderPersonal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrder\ViewWorkOrderSurveyPoint.aspx.cs">
+      <DependentUpon>ViewWorkOrderSurveyPoint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkOrder\ViewWorkOrderSurveyPoint.aspx.designer.cs">
+      <DependentUpon>ViewWorkOrderSurveyPoint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZipCode\AddZipCode.aspx.cs">
+      <DependentUpon>AddZipCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ZipCode\AddZipCode.aspx.designer.cs">
+      <DependentUpon>AddZipCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZipCode\ListRegion.aspx.cs">
+      <DependentUpon>ListRegion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ZipCode\ListRegion.aspx.designer.cs">
+      <DependentUpon>ListRegion.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GSI.Authentication\GSI.Authentication.csproj">
+      <Project>{828B1EBD-21CF-4E98-8846-7DFAE89861B9}</Project>
+      <Name>GSI.Authentication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSI.BusinessEntity\GSI.BusinessEntity.csproj">
+      <Project>{062D7DD9-6814-4366-BBFF-7E8CFD816DB9}</Project>
+      <Name>GSI.BusinessEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSI.BusinessRuleCore\GSI.BusinessRuleCore.csproj">
+      <Project>{451F06B7-2E49-46A0-AF9C-C0F12B7FFF0B}</Project>
+      <Name>GSI.BusinessRuleCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSI.BusinessRule\GSI.BusinessRule.csproj">
+      <Project>{6C6FDC5C-9946-4F79-B763-CD05480F94A1}</Project>
+      <Name>GSI.BusinessRule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSI.Common\GSI.Common.csproj">
+      <Project>{AA7049EA-3CD0-4786-95E5-664C333D0D57}</Project>
+      <Name>GSI.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSI.DataMapping\GSI.DataMapping.csproj">
+      <Project>{70BA38EC-724E-42AF-B45E-F9F2ECC94564}</Project>
+      <Name>GSI.DataMapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSIWebsiteApp\GSIWebsiteApp.csproj">
+      <Project>{913D1473-FB28-4962-89A7-55DF06281733}</Project>
+      <Name>GSIWebsiteApp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\MobileSystemWorkOrderServices\" />
+    <WCFMetadataStorage Include="Service References\SyncMasterServiceReference\" />
+    <WCFMetadataStorage Include="Service References\UpdateCPResultServiceReference\" />
+    <WCFMetadataStorage Include="Service References\UpdateCPStatusServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Report\ReportAnalysysSLAByPeriod.rdlc" />
+    <EmbeddedResource Include="Report\ReportAnalysysSLABySurveyor.rdlc" />
+    <EmbeddedResource Include="Report\ReportAnalysysSLASurveyByPeriod.rdlc" />
+    <EmbeddedResource Include="Report\ReportAnalysysSLATypeProcessByPeriod.rdlc" />
+    <EmbeddedResource Include="Report\ReportDetailCustomerTransaction.rdlc" />
+    <EmbeddedResource Include="Report\ReportOrderSLAByCustomer.rdlc" />
+    <EmbeddedResource Include="Report\ReportOrderSLAByPeriod.rdlc" />
+    <EmbeddedResource Include="Report\ReportOrderSurveyPoint.rdlc" />
+    <EmbeddedResource Include="Report\ReportOrderSurveyPointDetail.rdlc" />
+    <EmbeddedResource Include="Report\ReportProductivityDispatcher.rdlc" />
+    <EmbeddedResource Include="Report\ReportProductivitySurveyor.rdlc" />
+    <EmbeddedResource Include="Report\ReportResultWOMovWithImage.rdlc" />
+    <EmbeddedResource Include="Report\ReportResultWONotMovWithImage.rdlc" />
+    <EmbeddedResource Include="Report\ReportSummaryCustomerTransaction.rdlc" />
+    <EmbeddedResource Include="WorkOrder\ReportResultWOMovWithImage.rdlc" />
+    <EmbeddedResource Include="WorkOrder\ReportResultWONotMovWithImage.rdlc" />
+    <EmbeddedResource Include="WorkOrder\ReportResultWOMov.rdlc" />
+    <EmbeddedResource Include="WorkOrder\ReportResultWONotMov.rdlc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12517</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

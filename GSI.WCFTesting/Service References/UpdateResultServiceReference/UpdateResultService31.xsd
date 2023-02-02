@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4890/UpdateResultService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" />
+  <xs:element name="InsertResultMovableCoreSystemBundle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" minOccurs="0" name="_prmResultMovable" nillable="true" type="q1:TrResultMovable" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" minOccurs="0" name="_prmResultPhotoAddtMovable" nillable="true" type="q2:ArrayOfTrResultPhotoAdditionalMovable" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" minOccurs="0" name="_prmResultReqDocMovableList" nillable="true" type="q3:ArrayOfTrResultReqDocMovable" />
+        <xs:element minOccurs="0" name="_errMessage" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertResultMovableCoreSystemBundleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertResultMovableCoreSystemBundleResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_errMessage" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertResultMovableCoreSystem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" minOccurs="0" name="_prmResultMovable" nillable="true" type="q4:TrResultMovable" />
+        <xs:element minOccurs="0" name="_resultID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertResultMovableCoreSystemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_resultID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertResultPhotoAddtMovableCoreSystem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_resultID" type="xs:long" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" minOccurs="0" name="_prmResultPhotoAddtMovable" nillable="true" type="q5:ArrayOfTrResultPhotoAdditionalMovable" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertResultPhotoAddtMovableCoreSystemResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertResultReqDocMovableCoreSystem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_resultID" type="xs:long" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" minOccurs="0" name="_prmResultReqDocMovableList" nillable="true" type="q6:ArrayOfTrResultReqDocMovable" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertResultReqDocMovableCoreSystemResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertResultNotMovableCoreSystemBundle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" minOccurs="0" name="_prmResultNotMovable" nillable="true" type="q7:TrResultNotMovable" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" minOccurs="0" name="_prmResultPhotoAddtNotMovable" nillable="true" type="q8:ArrayOfTrResultPhotoAdditionalNotMovable" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" minOccurs="0" name="_prmResultReqDocNotMovableList" nillable="true" type="q9:ArrayOfTrResultReqDocNotMovable" />
+        <xs:element minOccurs="0" name="_errMessage" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertResultNotMovableCoreSystemBundleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertResultNotMovableCoreSystemBundleResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_errMessage" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertResultNotMovableCoreSystem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" minOccurs="0" name="_prmResultNotMovable" nillable="true" type="q10:TrResultNotMovable" />
+        <xs:element minOccurs="0" name="_resultID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertResultNotMovableCoreSystemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_resultID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertResultPhotoAddtNotMovableCoreSystem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_resultID" type="xs:long" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" minOccurs="0" name="_prmResultPhotoAddtNotMovable" nillable="true" type="q11:ArrayOfTrResultPhotoAdditionalNotMovable" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertResultPhotoAddtNotMovableCoreSystemResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertResultReqDocNotMovableCoreSystem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_resultID" type="xs:long" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" minOccurs="0" name="_prmResultReqDocNotMovableList" nillable="true" type="q12:ArrayOfTrResultReqDocNotMovable" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertResultReqDocNotMovableCoreSystemResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

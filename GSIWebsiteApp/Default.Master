@@ -1,0 +1,133 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.Master.cs" Inherits="GSIWebsiteApp.Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <script type="text/javascript" src="contents/javascripts/JScript.js">
+    </script>
+    <script type="text/javascript" src="contents/jQuery/jquery.toastmessage.js">
+    </script>
+    <script type="text/javascript" src="contents/jQuery/jquery-1.4.4.js">
+    </script>
+    <script type="text/javascript" src="contents/jQuery/jquery-1.4.4.min.js">
+    </script>
+    <link href="contents/jQuery/resources/css/jquery.toastmessage.css" type="text/css"
+        rel="stylesheet" />
+    <!--[if IE]><!-->
+    <link rel="stylesheet" type="text/css" href="contents/css/ie7.css" />
+    <!--<![endif]-->
+    <!--[if !IE]><!-->
+    <link rel="stylesheet" type="text/css" href="contents/css/firefox.css" />
+    <!--<![endif]-->
+    <asp:ContentPlaceHolder ID="HeadContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+    <title></title>
+</head>
+<body id="bodyMaster">
+    <div class="top">
+        <form id="form1" runat="server">
+        <div class="container">
+            <div>
+                <div id="logo">
+                </div>
+                <div id="CompanyName">
+                    <div id="CompanyNameText">
+                        CUSTOMER PORTAL
+                    </div>
+                    <div id="Tanggal">
+                        <asp:Label ID="TanggalLabel" runat="server"></asp:Label>
+                    </div>
+                    <div id="icon">
+                        <div style="margin: 9px; margin-left: 15px; margin-top: 5px;">
+                            <div style="float: left;" class="HomeButton">
+                                <asp:ImageButton ID="HomeButton" runat="server" ToolTip="Home" PostBackUrl="~/Order/ListOrder.aspx" /></div>
+                            <div style="float: left;" class="ProfileButton">
+                                <asp:ImageButton ID="ProfileButton" runat="server" ToolTip="Profile" PostBackUrl="~/AccountManagement/Profile.aspx" /></div>
+                            <div style="float: left;" class="DocumentButton">
+                                <asp:ImageButton ID="DocumentButton" runat="server" ToolTip="Mail Box" PostBackUrl="" /></div>
+                            <div style="float: left;" class="SettingButton">
+                                <asp:ImageButton ID="SettingButton" runat="server" ToolTip="Setting" PostBackUrl="" /></div>
+                            <div style="float: left;">
+                                <asp:LoginStatus ID="LogOutButton" runat="server" LoginText="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear: both;">
+                </div>
+            </div>
+            <div id="label" style="font-size: 10pt; font-weight: bold; margin-bottom: 10px">
+                <asp:Literal ID="CustomerLiteral" runat="server"></asp:Literal><br />
+                Welcome,
+                <asp:Literal ID="userLiteral" runat="server"></asp:Literal>
+            </div>
+            <div id="mainleftblock" runat="server" style="float: left; width: 230px;">
+                <table cellpadding="0" cellspacing="5" width="0" border="0">
+                    <tr>
+                        <td class="parentlist">
+                            ORDER SURVEY
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="List Order" ID="ListOrderLink" runat="server" NavigateUrl="~/Order/ListOrder.aspx"></asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="Add Survey Order - Personal" ID="AddPersonalLink" runat="server"></asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="Add Survey Order - Corporate" ID="AddCorporateLink" runat="server"></asp:HyperLink>
+                        </td>
+                    </tr>
+                    <%--<tr>
+                        <td class="parentlist">
+                            MAIL BOX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="Inbox" ID="InboxLink" runat="server" NavigateUrl="~/Order/ViewOrder.aspx"></asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="Outbox" ID="OutboxLink" runat="server" NavigateUrl="~/Order/ViewOrder.aspx"></asp:HyperLink>
+                        </td>
+                    </tr>--%>
+                    <tr>
+                        <td class="parentlist">
+                            ACCOUNT MANAGEMENT
+                        </td>
+                    </tr>
+                    <%--<tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="Company Profile" ID="ProfilLink" runat="server" NavigateUrl="~/AccountManagement/Profile.aspx"></asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="User Management" ID="UserLink" runat="server" NavigateUrl="~/UserManagement/ViewUserManagement.aspx"></asp:HyperLink>
+                        </td>
+                    </tr>--%>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="Change Password" ID="ChangePasswordLink" runat="server" NavigateUrl="~/User/EditUser.aspx"></asp:HyperLink>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="mainrightblock" runat="server">
+                <asp:ContentPlaceHolder ID="BodyContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        </form>
+    </div>
+    <div class="Masterfooter">
+    </div>
+</body>
+</html>

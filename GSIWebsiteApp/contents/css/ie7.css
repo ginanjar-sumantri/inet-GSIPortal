@@ -1,0 +1,522 @@
+﻿/* login */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html, body
+{
+    height: 100%;
+}
+.warningLiteral
+{
+    height: 100px;
+    line-height: 25px;
+    font-size: 8pt;
+    color: #333333;
+}
+.login_borderTop
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: url(../images/login/loginPageBorder.jpg) repeat-x left bottom;
+    background-image: url(../images/login/loginPageBorder.jpg);
+    z-index: 99;
+}
+.login_container
+{
+    min-height: 100%;
+}
+.login_borderBottom
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    background: url(../images/login/loginPageBorder.jpg) repeat-x left bottom;
+    float:left;
+}
+.OuterLogin
+{
+    background: url(../images/login/loginShadow.jpg) no-repeat center bottom;
+    z-index: -99;
+}
+.OuterLoginHeader
+{
+    display: table;
+    table-layout: auto;
+    width: 450px;
+    height: 105px;
+}
+.OuterLoginHeaderLeft
+{
+    background: url(../images/login/logoGSI2.png) no-repeat left center;
+    width: 120px;
+    height: 85px;
+    float: left;
+}
+.OuterLoginHeaderRight1
+{
+    height: 16px;
+}
+.OuterLoginHeaderRight2
+{
+    background: url(../images/login/GSI.png) no-repeat center;
+    height: 75px;
+    margin-left : 75px;
+    /*float: left;
+    font-family: Arial Black;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 28px;
+    color: #030A5D;
+    letter-spacing: -2px;*/
+}
+.OuterLoginHeaderRight3
+{    
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    text-align: right;
+}
+.OuterLoginBody
+{
+    height: 220px;
+    width: 440px;
+    margin: 0 auto;
+}
+.OuterLoginBodyWrapper
+{
+    margin: auto;
+}
+.OuterLoginBodyLeft
+{
+    background: url(../images/login/borderLoginBoxL.png) no-repeat left center transparent;
+    height: 219px;
+    width: 10px;
+    float: left;
+}
+.OuterLoginBodyMiddle
+{
+    background: url(../images/login/bodyLoginBox.jpg) repeat-x center center;
+    height: 219px;
+    width: 420px;
+    float: left;
+}
+.OuterLoginBodyRight
+{
+    background: url(../images/login/borderLoginBoxR.png) no-repeat right center;
+    height: 219px;
+    width: 10px;
+    float: left;
+}
+.OuterLoginFooter
+{
+    height: 40px;
+    width: 45%;
+}
+.login_text
+{
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: -1px;
+}
+.login_textWhite
+{
+    color: White;
+    font-size: 9px;
+    font-style: italic;
+    text-align: left;
+    text-decoration: none;
+    line-height: 20px;
+}
+.login_captcha
+{
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    background-color: #333333;
+    float: left;
+    height: 46px;
+}
+.login_captcha_right
+{
+    margin-left: 130px;
+}
+.login_captcha img
+{
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    margin: 3px 0px 0px 3px;
+}
+.btnRefreshCaptcha
+{
+    margin-right: 4px;
+    margin-bottom: 12px;
+}
+/* end login */
+
+.datatable_header
+{
+    background-color: #2F3DA5;
+    color: White;
+    font-size: 10pt;
+    line-height: 25px;
+}
+.datatable_body
+{
+    background-color: #CCCCCC;
+    color: Black;
+    font-size: 10pt;
+    line-height: 25px;
+}
+.datatable_header td
+{
+    padding: 0px 2px 0px 2px;
+}.datatable_body td
+{
+    padding: 0px 2px 0px 2px;
+}
+.line_separator
+{
+    height: 1px;
+    width: 100%;
+    background-color: #B3B3B3;
+}
+.QSearchLine
+{
+    line-height: 30px;
+}
+.pageHeight
+{
+    line-height: 20px;
+}
+
+.recomendedPage
+{    
+    font-size: 7pt;    
+    top: 0;    
+}
+
+/* Tambahan dari Style */
+
+#bodyMaster
+{
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    background-image: url(/contents/images/Bg_headerMaster.png);
+    background-repeat: repeat-x;
+}
+
+#bodyMaster
+{
+    font: 100.01% Verdana,Arial,Helvetica,sans-serif;
+    color: #333;
+    padding: 0;
+}
+
+.container
+{
+    margin: 0 auto;
+    width: 984px;
+    position: relative;
+}
+
+#logo
+{
+    background-image: url(/contents/images/login/logoGSI2.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 105px;
+    float: left;
+    margin-top: 6px;
+}
+#CompanyName
+{
+    float: left;
+    background-image: url(/contents/images/companyname_master.png);
+    width: 360px;
+    height: 0px;
+    background-repeat: no-repeat;
+    margin-left: 518px;
+    padding-top: 26px;
+    margin-top: 17px;
+    background-position: right;
+}
+#CompanyNameText
+{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+}
+#Tanggal
+{
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 24px;
+    float: left;
+    margin-left: -26px;
+    position: absolute;    
+}
+#icon
+{
+    background-image: url(/contents/images/bg_icon_master.png);
+    background-repeat: no-repeat;
+    height: 34px;
+    float: left;
+    margin-left: 165px;
+    margin-top: 13px;
+    width: 196px;
+    position:absolute;
+}
+.HomeButton
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+    line-height: 0;
+    outline: none;
+    margin: 1px;
+}
+.ProfileButton
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+    line-height: 0;
+    outline: none;
+    margin: 1px;
+}
+.DocumentButton
+{
+    background-position: center;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+    line-height: 0;
+    outline: none;
+    margin: 1px;
+}
+.SettingButton
+{
+    background-position: center;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+    line-height: 0;
+    outline: none;
+    margin: 1px;
+}
+#LogOutButton
+{
+    background-image: url(/contents/images/icon_logout_master.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 66px;
+    height: 24px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    margin: 1px;
+}
+
+.top
+{
+    min-height: 100%;
+}
+
+.rootnode
+{
+    background-color: #030A5D;
+    font-size: 9pt;
+    width: 180px;
+    font-weight: bold;
+    border-bottom: 1px solid #FFFFFF;
+    border-radius: 2px;
+}
+
+.leafnode
+{
+    background-color: #CCCCCC;
+    font-size: 8pt;
+    width: 160px;
+    border-bottom: 1px solid #FFFFFF;
+    letter-spacing: -1px;
+}
+
+.Masterfooter
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    background: url(../images/loginPageBorder.jpg) repeat-x left bottom;
+}
+
+#mainleftblock a
+{
+    width: 230px;
+    font-size: 8pt;
+    color: #030A5D;
+    text-decoration: none;
+    padding-left: 9px;
+}
+
+.parentlist
+{
+    width: 230px;
+    height: 25px;
+    background: #030A5D;
+    font-size: 9pt;
+    font-weight: bold;
+    color: White;
+    border-radius: 2px;
+    padding-left: 5px;
+}
+
+.childlist
+{
+    height: 25px;
+    background: #CCCCCC;
+    border-radius: 2px;
+}
+.warning
+{
+    color: Red;
+}
+/*view order*/
+
+
+.formTextColor
+{
+    padding-left: 10px;
+    background-color: #2F3DA5;
+    width: 120px;
+    font-family: Arial;
+    font-size: 9pt;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 25px;
+}
+.formTextColorProfile
+{
+    padding-left: 10px;
+    background-color: #030A5D;
+    width: 200px;
+    font-family: Arial;
+    font-size: 9pt;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 25px;
+}
+.formTextColorMod
+{
+    padding-left: 10px;
+    width: 120px;
+    font-family: Arial;
+    font-size: 9pt;
+    font-weight: bold;
+    color: #000000;
+    line-height: 25px;
+}
+.formLabelColor
+{
+    padding-left: 10px;
+    background-color: #CCCCCC;
+    font-family: Arial;
+    font-size: 9pt;
+    font-weight: bold;
+    color: Black;
+    width: 253px;
+    line-height: 25px;
+}
+
+/* end view order*/
+
+/*OrderConfirmation*/
+
+/* view add survey point Office*/
+.fontColor
+{
+    color: #808080;
+}
+
+.fontColor2
+{
+    font-weight: bold;
+    color: White;
+}
+.TextBox
+{
+    border: 1px Solid #CCCCCC;
+    height: 22px;
+    width: 300px;
+}
+.PageLiteral
+{
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12pt;
+    color: #030A5D;
+    font-style: italic;
+}
+
+/*View Result Personal*/
+
+.clueLabel
+{
+    background: #666666;
+}
+.formTextResult
+{
+    font-size: 10pt;
+    font-weight: bold;
+    font-style: italic;
+    color: #2F3DA5;
+}
+
+.formTextColorUser
+{
+    padding-left: 10px;
+    background-color: #2F3DA5;
+    width: 150px;
+    font-family: Arial;
+    font-size: 9pt;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 25px;
+}
+.Multiline
+{
+    padding-left: 10px;
+    background-color: #CCCCCC;
+    font-family: Arial;
+    font-size: 9pt;
+    font-weight: bold;
+    color: Black;
+    line-height: 25px;
+    border:none;
+}

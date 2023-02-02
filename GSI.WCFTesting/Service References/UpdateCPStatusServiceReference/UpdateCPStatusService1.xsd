@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GSI.Common.Enum" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GSI.Common.Enum" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="SurveyPointType">
+    <xs:annotation>
+      <xs:appinfo>
+        <ActualType Name="unsignedByte" Namespace="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Movable" />
+      <xs:enumeration value="NotMovable" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SurveyPointType" nillable="true" type="tns:SurveyPointType" />
+  <xs:simpleType name="GSIInternalStatus">
+    <xs:annotation>
+      <xs:appinfo>
+        <ActualType Name="unsignedByte" Namespace="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NA" />
+      <xs:enumeration value="ReceivedBySystem" />
+      <xs:enumeration value="WaitingForAssigment" />
+      <xs:enumeration value="WaitingForDownload" />
+      <xs:enumeration value="WaitingForSurvey" />
+      <xs:enumeration value="OnTheWay" />
+      <xs:enumeration value="OnTheSpot" />
+      <xs:enumeration value="SurveyResultReceived" />
+      <xs:enumeration value="Published" />
+      <xs:enumeration value="Cancelled" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="GSIInternalStatus" nillable="true" type="tns:GSIInternalStatus" />
+</xs:schema>

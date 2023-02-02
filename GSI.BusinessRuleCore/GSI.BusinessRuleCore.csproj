@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{451F06B7-2E49-46A0-AF9C-C0F12B7FFF0B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GSI.BusinessRuleCore</RootNamespace>
+    <AssemblyName>GSI.BusinessRuleCore</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/GSI.BusinessRuleCore/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base.cs" />
+    <Compile Include="BatteryBL.cs" />
+    <Compile Include="BrandBL.cs" />
+    <Compile Include="ReportBL.cs" />
+    <Compile Include="DashboardBL.cs" />
+    <Compile Include="Service References\SyncMasterServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SurveyPointLogBL.cs" />
+    <Compile Include="RegionZipCodeBL.cs" />
+    <Compile Include="UserBL.cs" />
+    <Compile Include="CustomerUserBL.cs" />
+    <Compile Include="GeneralHelper.cs" />
+    <Compile Include="OperatorBL.cs" />
+    <Compile Include="GadgetBL.cs" />
+    <Compile Include="Service References\UpdateCPResultServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="WCFBL.cs" />
+    <Compile Include="Service References\MobileSystemWorkOrderServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UpdateCPStatusServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SIMCardBL.cs" />
+    <Compile Include="SurveyorBL.cs" />
+    <Compile Include="EmployeeBL.cs" />
+    <Compile Include="SurveyPointBL.cs" />
+    <Compile Include="WorkOrderBL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GSI.Authentication\GSI.Authentication.csproj">
+      <Project>{828B1EBD-21CF-4E98-8846-7DFAE89861B9}</Project>
+      <Name>GSI.Authentication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSI.BusinessEntity\GSI.BusinessEntity.csproj">
+      <Project>{062D7DD9-6814-4366-BBFF-7E8CFD816DB9}</Project>
+      <Name>GSI.BusinessEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSI.BusinessRule\GSI.BusinessRule.csproj">
+      <Project>{6C6FDC5C-9946-4F79-B763-CD05480F94A1}</Project>
+      <Name>GSI.BusinessRule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSI.Common\GSI.Common.csproj">
+      <Project>{AA7049EA-3CD0-4786-95E5-664C333D0D57}</Project>
+      <Name>GSI.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSI.DataMapping\GSI.DataMapping.csproj">
+      <Project>{70BA38EC-724E-42AF-B45E-F9F2ECC94564}</Project>
+      <Name>GSI.DataMapping</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Service References\MobileSystemWorkOrderServices\WorkOrder.wsdl" />
+    <None Include="Service References\MobileSystemWorkOrderServices\WorkOrder.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MobileSystemWorkOrderServices\WorkOrder1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MobileSystemWorkOrderServices\WorkOrder2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MobileSystemWorkOrderServices\WorkOrder3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SyncMasterServiceReference\GSI.BusinessRuleCore.SyncMasterServiceReference.Gen_LoginHistory.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SyncMasterServiceReference\SyncMasterService.wsdl" />
+    <None Include="Service References\SyncMasterServiceReference\SyncMasterService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SyncMasterServiceReference\SyncMasterService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SyncMasterServiceReference\SyncMasterService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateCPResultServiceReference\UpdateCPResultService.wsdl" />
+    <None Include="Service References\UpdateCPResultServiceReference\UpdateCPResultService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateCPResultServiceReference\UpdateCPResultService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateCPResultServiceReference\UpdateCPResultService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateCPStatusServiceReference\UpdateCPStatusService1.wsdl" />
+    <None Include="Service References\UpdateCPStatusServiceReference\UpdateCPStatusService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateCPStatusServiceReference\UpdateCPStatusService31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateCPStatusServiceReference\UpdateCPStatusService32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\MobileSystemWorkOrderServices\" />
+    <WCFMetadataStorage Include="Service References\SyncMasterServiceReference\" />
+    <WCFMetadataStorage Include="Service References\UpdateCPResultServiceReference\" />
+    <WCFMetadataStorage Include="Service References\UpdateCPStatusServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UpdateCPStatusServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UpdateCPStatusServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UpdateCPStatusServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MobileSystemWorkOrderServices\WorkOrder.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MobileSystemWorkOrderServices\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MobileSystemWorkOrderServices\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MobileSystemWorkOrderServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UpdateCPResultServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UpdateCPResultServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UpdateCPResultServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UpdateCPStatusServiceReference\UpdateCPStatusService1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UpdateCPResultServiceReference\UpdateCPResultService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SyncMasterServiceReference\SyncMasterService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SyncMasterServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SyncMasterServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SyncMasterServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,342 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSI.SystemConfig", "GSI.SystemConfig\GSI.SystemConfig.csproj", "{0984FEC1-05CC-4D12-BE4C-DA1262097D49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSI.BusinessRule", "GSI.BusinessRule\GSI.BusinessRule.csproj", "{6C6FDC5C-9946-4F79-B763-CD05480F94A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSI.Authentication", "GSI.Authentication\GSI.Authentication.csproj", "{828B1EBD-21CF-4E98-8846-7DFAE89861B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSI.BusinessRuleCore", "GSI.BusinessRuleCore\GSI.BusinessRuleCore.csproj", "{451F06B7-2E49-46A0-AF9C-C0F12B7FFF0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSI.DataMapping", "GSI.DataMapping\GSI.DataMapping.csproj", "{70BA38EC-724E-42AF-B45E-F9F2ECC94564}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSI.Common", "GSI.Common\GSI.Common.csproj", "{AA7049EA-3CD0-4786-95E5-664C333D0D57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSIWebsiteApp", "GSIWebsiteApp\GSIWebsiteApp.csproj", "{913D1473-FB28-4962-89A7-55DF06281733}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8A91CE79-5686-4CA2-8DF1-E5CABC2E42DA} = {8A91CE79-5686-4CA2-8DF1-E5CABC2E42DA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSI.BusinessEntity", "GSI.BusinessEntity\GSI.BusinessEntity.csproj", "{062D7DD9-6814-4366-BBFF-7E8CFD816DB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSI.DataAccess", "GSI.DataAccess\GSI.DataAccess.csproj", "{479CE1B5-DAE2-4D8B-B237-AA8227F1DD47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSIWebsiteCore", "GSIWebsiteCore\GSIWebsiteCore.csproj", "{EA24EEA8-FF70-4BA6-B77A-AAC2A0CED9E3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{96849D0A-B2A4-4A00-826E-39A309F7FF59} = {96849D0A-B2A4-4A00-826E-39A309F7FF59}
+		{8A91CE79-5686-4CA2-8DF1-E5CABC2E42DA} = {8A91CE79-5686-4CA2-8DF1-E5CABC2E42DA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSI.WCFToCoreSystem", "GSI.WCFToCoreSystem\GSI.WCFToCoreSystem.csproj", "{8A91CE79-5686-4CA2-8DF1-E5CABC2E42DA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{96849D0A-B2A4-4A00-826E-39A309F7FF59} = {96849D0A-B2A4-4A00-826E-39A309F7FF59}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSI.WCFToCustomerPortal", "GSI.WCFToCustomerPortal\GSI.WCFToCustomerPortal.csproj", "{96849D0A-B2A4-4A00-826E-39A309F7FF59}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "GSIWebsiteCore.Setup", "GSIWebsiteCore.Setup\GSIWebsiteCore.Setup.vdproj", "{577D03A9-2F79-44EA-91C2-FA2BA34FC237}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "GSIWebsiteApp.Setup", "GSIWebsiteApp.Setup\GSIWebsiteApp.Setup.vdproj", "{83DC4C93-56F5-4DFE-B885-AD4FA8A5A814}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "GSI.WCFToCustomerPortal.Setup", "GSI.WCFToCustomerPortal.Setup\GSI.WCFToCustomerPortal.Setup.vdproj", "{B3FD04BD-9E65-4CBF-BFC4-3A0A4029BC22}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "GSI.WCFToCoreSystem.Setup", "GSI.WCFToCoreSystem.Setup\GSI.WCFToCoreSystem.Setup.vdproj", "{11C14AFD-EB7B-4245-9A37-026E6D3A9DF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSI.WCFTesting", "GSI.WCFTesting\GSI.WCFTesting.csproj", "{85397566-E61D-4773-84D8-E123E4691C77}"
+	ProjectSection(ProjectDependencies) = postProject
+		{96849D0A-B2A4-4A00-826E-39A309F7FF59} = {96849D0A-B2A4-4A00-826E-39A309F7FF59}
+		{8A91CE79-5686-4CA2-8DF1-E5CABC2E42DA} = {8A91CE79-5686-4CA2-8DF1-E5CABC2E42DA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSIRepoting", "GSIRepoting\GSIRepoting.csproj", "{A5CAB781-9246-418A-8262-5F99BE7AAEB8}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 19
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.88.5:8080/tfs/gsidev-collection
+		SccProjectUniqueName0 = GSI.SystemConfig\\GSI.SystemConfig.csproj
+		SccProjectName0 = GSI.SystemConfig
+		SccLocalPath0 = GSI.SystemConfig
+		SccProjectUniqueName1 = GSI.BusinessRule\\GSI.BusinessRule.csproj
+		SccProjectName1 = GSI.BusinessRule
+		SccLocalPath1 = GSI.BusinessRule
+		SccProjectUniqueName2 = GSI.Authentication\\GSI.Authentication.csproj
+		SccProjectName2 = GSI.Authentication
+		SccLocalPath2 = GSI.Authentication
+		SccProjectUniqueName3 = GSI.BusinessRuleCore\\GSI.BusinessRuleCore.csproj
+		SccProjectName3 = GSI.BusinessRuleCore
+		SccLocalPath3 = GSI.BusinessRuleCore
+		SccProjectUniqueName4 = GSI.DataMapping\\GSI.DataMapping.csproj
+		SccProjectName4 = GSI.DataMapping
+		SccLocalPath4 = GSI.DataMapping
+		SccProjectUniqueName5 = GSI.Common\\GSI.Common.csproj
+		SccProjectName5 = GSI.Common
+		SccLocalPath5 = GSI.Common
+		SccProjectUniqueName6 = GSIWebsiteApp\\GSIWebsiteApp.csproj
+		SccProjectName6 = GSIWebsiteApp
+		SccLocalPath6 = GSIWebsiteApp
+		SccProjectUniqueName7 = GSI.BusinessEntity\\GSI.BusinessEntity.csproj
+		SccProjectName7 = GSI.BusinessEntity
+		SccLocalPath7 = GSI.BusinessEntity
+		SccProjectUniqueName8 = GSI.DataAccess\\GSI.DataAccess.csproj
+		SccProjectName8 = GSI.DataAccess
+		SccLocalPath8 = GSI.DataAccess
+		SccProjectUniqueName9 = GSIWebsiteCore\\GSIWebsiteCore.csproj
+		SccProjectName9 = GSIWebsiteCore
+		SccLocalPath9 = GSIWebsiteCore
+		SccProjectUniqueName10 = GSI.WCFToCoreSystem\\GSI.WCFToCoreSystem.csproj
+		SccProjectName10 = GSI.WCFToCoreSystem
+		SccLocalPath10 = GSI.WCFToCoreSystem
+		SccProjectUniqueName11 = GSI.WCFToCustomerPortal\\GSI.WCFToCustomerPortal.csproj
+		SccProjectName11 = GSI.WCFToCustomerPortal
+		SccLocalPath11 = GSI.WCFToCustomerPortal
+		SccProjectUniqueName12 = GSIWebsiteCore.Setup\\GSIWebsiteCore.Setup.vdproj
+		SccProjectName12 = GSIWebsiteCore.Setup
+		SccLocalPath12 = GSIWebsiteCore.Setup
+		SccProjectUniqueName13 = GSIWebsiteApp.Setup\\GSIWebsiteApp.Setup.vdproj
+		SccProjectName13 = GSIWebsiteApp.Setup
+		SccLocalPath13 = GSIWebsiteApp.Setup
+		SccProjectUniqueName14 = GSI.WCFToCustomerPortal.Setup\\GSI.WCFToCustomerPortal.Setup.vdproj
+		SccProjectName14 = GSI.WCFToCustomerPortal.Setup
+		SccLocalPath14 = GSI.WCFToCustomerPortal.Setup
+		SccProjectUniqueName15 = GSI.WCFToCoreSystem.Setup\\GSI.WCFToCoreSystem.Setup.vdproj
+		SccProjectName15 = GSI.WCFToCoreSystem.Setup
+		SccLocalPath15 = GSI.WCFToCoreSystem.Setup
+		SccProjectUniqueName16 = GSI.WCFTesting\\GSI.WCFTesting.csproj
+		SccProjectName16 = GSI.WCFTesting
+		SccLocalPath16 = GSI.WCFTesting
+		SccProjectUniqueName17 = GSIRepoting\\GSIRepoting.csproj
+		SccProjectName17 = GSIRepoting
+		SccLocalPath17 = GSIRepoting
+		SccLocalPath18 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0984FEC1-05CC-4D12-BE4C-DA1262097D49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0984FEC1-05CC-4D12-BE4C-DA1262097D49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0984FEC1-05CC-4D12-BE4C-DA1262097D49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0984FEC1-05CC-4D12-BE4C-DA1262097D49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C6FDC5C-9946-4F79-B763-CD05480F94A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C6FDC5C-9946-4F79-B763-CD05480F94A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C6FDC5C-9946-4F79-B763-CD05480F94A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C6FDC5C-9946-4F79-B763-CD05480F94A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{828B1EBD-21CF-4E98-8846-7DFAE89861B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{828B1EBD-21CF-4E98-8846-7DFAE89861B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{828B1EBD-21CF-4E98-8846-7DFAE89861B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{828B1EBD-21CF-4E98-8846-7DFAE89861B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{451F06B7-2E49-46A0-AF9C-C0F12B7FFF0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{451F06B7-2E49-46A0-AF9C-C0F12B7FFF0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{451F06B7-2E49-46A0-AF9C-C0F12B7FFF0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{451F06B7-2E49-46A0-AF9C-C0F12B7FFF0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70BA38EC-724E-42AF-B45E-F9F2ECC94564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70BA38EC-724E-42AF-B45E-F9F2ECC94564}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70BA38EC-724E-42AF-B45E-F9F2ECC94564}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70BA38EC-724E-42AF-B45E-F9F2ECC94564}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA7049EA-3CD0-4786-95E5-664C333D0D57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA7049EA-3CD0-4786-95E5-664C333D0D57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA7049EA-3CD0-4786-95E5-664C333D0D57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA7049EA-3CD0-4786-95E5-664C333D0D57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{913D1473-FB28-4962-89A7-55DF06281733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{913D1473-FB28-4962-89A7-55DF06281733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{913D1473-FB28-4962-89A7-55DF06281733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{913D1473-FB28-4962-89A7-55DF06281733}.Release|Any CPU.Build.0 = Release|Any CPU
+		{062D7DD9-6814-4366-BBFF-7E8CFD816DB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{062D7DD9-6814-4366-BBFF-7E8CFD816DB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{062D7DD9-6814-4366-BBFF-7E8CFD816DB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{062D7DD9-6814-4366-BBFF-7E8CFD816DB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{479CE1B5-DAE2-4D8B-B237-AA8227F1DD47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{479CE1B5-DAE2-4D8B-B237-AA8227F1DD47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{479CE1B5-DAE2-4D8B-B237-AA8227F1DD47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{479CE1B5-DAE2-4D8B-B237-AA8227F1DD47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA24EEA8-FF70-4BA6-B77A-AAC2A0CED9E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA24EEA8-FF70-4BA6-B77A-AAC2A0CED9E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA24EEA8-FF70-4BA6-B77A-AAC2A0CED9E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA24EEA8-FF70-4BA6-B77A-AAC2A0CED9E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A91CE79-5686-4CA2-8DF1-E5CABC2E42DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A91CE79-5686-4CA2-8DF1-E5CABC2E42DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A91CE79-5686-4CA2-8DF1-E5CABC2E42DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A91CE79-5686-4CA2-8DF1-E5CABC2E42DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96849D0A-B2A4-4A00-826E-39A309F7FF59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96849D0A-B2A4-4A00-826E-39A309F7FF59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96849D0A-B2A4-4A00-826E-39A309F7FF59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96849D0A-B2A4-4A00-826E-39A309F7FF59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{577D03A9-2F79-44EA-91C2-FA2BA34FC237}.Debug|Any CPU.ActiveCfg = Debug
+		{577D03A9-2F79-44EA-91C2-FA2BA34FC237}.Release|Any CPU.ActiveCfg = Release
+		{83DC4C93-56F5-4DFE-B885-AD4FA8A5A814}.Debug|Any CPU.ActiveCfg = Debug
+		{83DC4C93-56F5-4DFE-B885-AD4FA8A5A814}.Release|Any CPU.ActiveCfg = Release
+		{B3FD04BD-9E65-4CBF-BFC4-3A0A4029BC22}.Debug|Any CPU.ActiveCfg = Debug
+		{B3FD04BD-9E65-4CBF-BFC4-3A0A4029BC22}.Release|Any CPU.ActiveCfg = Release
+		{11C14AFD-EB7B-4245-9A37-026E6D3A9DF3}.Debug|Any CPU.ActiveCfg = Debug
+		{11C14AFD-EB7B-4245-9A37-026E6D3A9DF3}.Release|Any CPU.ActiveCfg = Release
+		{85397566-E61D-4773-84D8-E123E4691C77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85397566-E61D-4773-84D8-E123E4691C77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85397566-E61D-4773-84D8-E123E4691C77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85397566-E61D-4773-84D8-E123E4691C77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5CAB781-9246-418A-8262-5F99BE7AAEB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5CAB781-9246-418A-8262-5F99BE7AAEB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5CAB781-9246-418A-8262-5F99BE7AAEB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5CAB781-9246-418A-8262-5F99BE7AAEB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 19
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.88.5:8080/tfs/gsidev-collection
+		SccProjectUniqueName0 = GSI.WCFTesting\\GSI.WCFTesting.csproj
+		SccProjectName0 = GSI.WCFTesting
+		SccLocalPath0 = GSI.WCFTesting
+		SccProjectUniqueName1 = GSI.WCFToCoreSystem.Setup\\GSI.WCFToCoreSystem.Setup.vdproj
+		SccProjectName1 = GSI.WCFToCoreSystem.Setup
+		SccLocalPath1 = GSI.WCFToCoreSystem.Setup
+		SccProjectUniqueName2 = GSI.WCFToCustomerPortal.Setup\\GSI.WCFToCustomerPortal.Setup.vdproj
+		SccProjectName2 = GSI.WCFToCustomerPortal.Setup
+		SccLocalPath2 = GSI.WCFToCustomerPortal.Setup
+		SccProjectUniqueName3 = GSIWebsiteApp.Setup\\GSIWebsiteApp.Setup.vdproj
+		SccProjectName3 = GSIWebsiteApp.Setup
+		SccLocalPath3 = GSIWebsiteApp.Setup
+		SccProjectUniqueName4 = GSIWebsiteCore.Setup\\GSIWebsiteCore.Setup.vdproj
+		SccProjectName4 = GSIWebsiteCore.Setup
+		SccLocalPath4 = GSIWebsiteCore.Setup
+		SccProjectUniqueName5 = GSI.WCFToCustomerPortal\\GSI.WCFToCustomerPortal.csproj
+		SccProjectName5 = GSI.WCFToCustomerPortal
+		SccLocalPath5 = GSI.WCFToCustomerPortal
+		SccProjectUniqueName6 = GSI.WCFToCoreSystem\\GSI.WCFToCoreSystem.csproj
+		SccProjectName6 = GSI.WCFToCoreSystem
+		SccLocalPath6 = GSI.WCFToCoreSystem
+		SccProjectUniqueName7 = GSIWebsiteCore\\GSIWebsiteCore.csproj
+		SccProjectName7 = GSIWebsiteCore
+		SccLocalPath7 = GSIWebsiteCore
+		SccProjectUniqueName8 = GSI.DataAccess\\GSI.DataAccess.csproj
+		SccProjectName8 = GSI.DataAccess
+		SccLocalPath8 = GSI.DataAccess
+		SccProjectUniqueName9 = GSIWebsiteCore\\GSIWebsiteCore.csproj
+		SccProjectName9 = GSIWebsiteCore
+		SccLocalPath9 = GSIWebsiteCore
+		SccProjectUniqueName10 = GSI.WCFToCoreSystem\\GSI.WCFToCoreSystem.csproj
+		SccProjectName10 = GSI.WCFToCoreSystem
+		SccLocalPath10 = GSI.WCFToCoreSystem
+		SccProjectUniqueName11 = GSI.WCFToCustomerPortal\\GSI.WCFToCustomerPortal.csproj
+		SccProjectName11 = GSI.WCFToCustomerPortal
+		SccLocalPath11 = GSI.WCFToCustomerPortal
+		SccProjectUniqueName12 = GSIWebsiteCore.Setup\\GSIWebsiteCore.Setup.vdproj
+		SccProjectName12 = GSIWebsiteCore.Setup
+		SccLocalPath12 = GSIWebsiteCore.Setup
+		SccProjectUniqueName13 = GSIWebsiteApp.Setup\\GSIWebsiteApp.Setup.vdproj
+		SccProjectName13 = GSIWebsiteApp.Setup
+		SccLocalPath13 = GSIWebsiteApp.Setup
+		SccProjectUniqueName14 = GSI.WCFToCustomerPortal.Setup\\GSI.WCFToCustomerPortal.Setup.vdproj
+		SccProjectName14 = GSI.WCFToCustomerPortal.Setup
+		SccLocalPath14 = GSI.WCFToCustomerPortal.Setup
+		SccProjectUniqueName15 = GSI.WCFToCoreSystem.Setup\\GSI.WCFToCoreSystem.Setup.vdproj
+		SccProjectName15 = GSI.WCFToCoreSystem.Setup
+		SccLocalPath15 = GSI.WCFToCoreSystem.Setup
+		SccProjectUniqueName16 = GSI.WCFTesting\\GSI.WCFTesting.csproj
+		SccProjectName16 = GSI.WCFTesting
+		SccLocalPath16 = GSI.WCFTesting
+		SccProjectUniqueName17 = GSIRepoting\\GSIRepoting.csproj
+		SccProjectName17 = GSIRepoting
+		SccLocalPath17 = GSIRepoting
+		SccLocalPath18 = .
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 12
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.88.5:8080/tfs/gsidev-collection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = GSI.SystemConfig\\GSI.SystemConfig.csproj
+		SccProjectName1 = GSI.SystemConfig
+		SccLocalPath1 = GSI.SystemConfig
+		SccProjectUniqueName2 = GSI.BusinessRule\\GSI.BusinessRule.csproj
+		SccProjectName2 = GSI.BusinessRule
+		SccLocalPath2 = GSI.BusinessRule
+		SccProjectUniqueName3 = GSI.Authentication\\GSI.Authentication.csproj
+		SccProjectName3 = GSI.Authentication
+		SccLocalPath3 = GSI.Authentication
+		SccTeamFoundationServer = http://192.168.88.5:8080/tfs/gsidev-collection
+		SccProjectUniqueName0 = GSI.Authentication\\GSI.Authentication.csproj
+		SccProjectName0 = GSI.Authentication
+		SccLocalPath0 = GSI.Authentication
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = GSI.SystemConfig\\GSI.SystemConfig.csproj
+		SccProjectName2 = GSI.SystemConfig
+		SccLocalPath2 = GSI.SystemConfig
+		SccProjectUniqueName3 = GSI.BusinessRule\\GSI.BusinessRule.csproj
+		SccProjectName3 = GSI.BusinessRule
+		SccLocalPath3 = GSI.BusinessRule
+		SccProjectUniqueName4 = GSI.BusinessRuleCore\\GSI.BusinessRuleCore.csproj
+		SccProjectName4 = GSI.BusinessRuleCore
+		SccLocalPath4 = GSI.BusinessRuleCore
+		SccProjectUniqueName5 = GSI.DataMapping\\GSI.DataMapping.csproj
+		SccProjectName5 = GSI.DataMapping
+		SccLocalPath5 = GSI.DataMapping
+		SccProjectUniqueName6 = GSI.Common\\GSI.Common.csproj
+		SccProjectName6 = GSI.Common
+		SccLocalPath6 = GSI.Common
+		SccProjectUniqueName7 = GSIWebsiteApp\\GSIWebsiteApp.csproj
+		SccProjectName7 = GSIWebsiteApp
+		SccLocalPath7 = GSIWebsiteApp
+		SccProjectUniqueName8 = GSI.BusinessEntity\\GSI.BusinessEntity.csproj
+		SccProjectName8 = GSI.BusinessEntity
+		SccLocalPath8 = GSI.BusinessEntity
+		SccProjectUniqueName9 = GSI.DataAccess\\GSI.DataAccess.csproj
+		SccProjectName9 = GSI.DataAccess
+		SccLocalPath9 = GSI.DataAccess
+		SccProjectUniqueName10 = GSIWebsiteCore\\GSIWebsiteCore.csproj
+		SccProjectName10 = GSIWebsiteCore
+		SccLocalPath10 = GSIWebsiteCore
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.88.5:8080/tfs/gsidev-collection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = GSI.SystemConfig\\GSI.SystemConfig.csproj
+		SccProjectName1 = GSI.SystemConfig
+		SccLocalPath1 = GSI.SystemConfig
+		SccProjectUniqueName2 = GSI.BusinessRule\\GSI.BusinessRule.csproj
+		SccProjectName2 = GSI.BusinessRule
+		SccLocalPath2 = GSI.BusinessRule
+		SccProjectUniqueName3 = GSI.Authentication\\GSI.Authentication.csproj
+		SccProjectName3 = GSI.Authentication
+		SccLocalPath3 = GSI.Authentication
+		SccTeamFoundationServer = http://192.168.88.5:8080/tfs/gsidev-collection
+		SccProjectUniqueName0 = GSI.Authentication\\GSI.Authentication.csproj
+		SccProjectName0 = GSI.Authentication
+		SccLocalPath0 = GSI.Authentication
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = GSI.SystemConfig\\GSI.SystemConfig.csproj
+		SccProjectName2 = GSI.SystemConfig
+		SccLocalPath2 = GSI.SystemConfig
+		SccProjectUniqueName3 = GSI.BusinessRule\\GSI.BusinessRule.csproj
+		SccProjectName3 = GSI.BusinessRule
+		SccLocalPath3 = GSI.BusinessRule
+		SccProjectUniqueName4 = GSI.BusinessRuleCore\\GSI.BusinessRuleCore.csproj
+		SccProjectName4 = GSI.BusinessRuleCore
+		SccLocalPath4 = GSI.BusinessRuleCore
+		SccProjectUniqueName5 = GSI.DataMapping\\GSI.DataMapping.csproj
+		SccProjectName5 = GSI.DataMapping
+		SccLocalPath5 = GSI.DataMapping
+		SccProjectUniqueName6 = GSI.Common\\GSI.Common.csproj
+		SccProjectName6 = GSI.Common
+		SccLocalPath6 = GSI.Common
+		SccProjectUniqueName7 = GSIWebsiteApp\\GSIWebsiteApp.csproj
+		SccProjectName7 = GSIWebsiteApp
+		SccLocalPath7 = GSIWebsiteApp
+		SccProjectUniqueName8 = GSI.BusinessEntity\\GSI.BusinessEntity.csproj
+		SccProjectName8 = GSI.BusinessEntity
+		SccLocalPath8 = GSI.BusinessEntity
+		SccProjectUniqueName9 = GSI.DataAccess\\GSI.DataAccess.csproj
+		SccProjectName9 = GSI.DataAccess
+		SccLocalPath9 = GSI.DataAccess
+		SccProjectUniqueName10 = GSIWebsiteCore\\GSIWebsiteCore.csproj
+		SccProjectName10 = GSIWebsiteCore
+		SccLocalPath10 = GSIWebsiteCore
+	EndGlobalSection
+EndGlobal

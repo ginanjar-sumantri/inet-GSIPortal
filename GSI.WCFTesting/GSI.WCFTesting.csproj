@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85397566-E61D-4773-84D8-E123E4691C77}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GSI.WCFTesting</RootNamespace>
+    <AssemblyName>GSI.WCFTesting</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <None Include="Service References\UpdateCPStatusServiceReference\UpdateCPStatusService.wsdl" />
+    <None Include="Service References\UpdateCPStatusServiceReference\UpdateCPStatusService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateCPStatusServiceReference\UpdateCPStatusService1.wsdl" />
+    <None Include="Service References\UpdateCPStatusServiceReference\UpdateCPStatusService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateCPStatusServiceReference\UpdateCPStatusService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateCPStatusServiceReference\UpdateCPStatusService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateCPStatusServiceReference\UpdateCPStatusService31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateCPStatusServiceReference\UpdateCPStatusService32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateResultServiceReference\UpdateResultService1.wsdl" />
+    <None Include="Service References\UpdateResultServiceReference\UpdateResultService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateResultServiceReference\UpdateResultService31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateResultServiceReference\UpdateResultService32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateCPStatusServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\UpdateCPStatusServiceReference\configuration.svcinfo" />
+    <None Include="Service References\UpdateCPStatusServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\UpdateResultServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\UpdateResultServiceReference\configuration.svcinfo" />
+    <None Include="Service References\UpdateResultServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\UpdateCPStatusServiceReference\UpdateCPStatusService1.disco" />
+    <None Include="Service References\UpdateCPStatusServiceReference\UpdateCPStatusService.disco" />
+    <None Include="Service References\UpdateResultServiceReference\UpdateResultService1.disco" />
+    <None Include="Service References\UpdateStatusCoreSystemServiceReference\UpdateStatusService.disco" />
+    <None Include="Service References\UpdateStatusCoreSystemServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\UpdateStatusCoreSystemServiceReference\configuration.svcinfo" />
+    <None Include="Service References\UpdateStatusCoreSystemServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Service References\UpdateStatusCoreSystemServiceReference\UpdateStatusService.wsdl" />
+    <None Include="Service References\UpdateStatusCoreSystemServiceReference\UpdateStatusService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateStatusCoreSystemServiceReference\UpdateStatusService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UpdateStatusCoreSystemServiceReference\UpdateStatusService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\UpdateCPStatusServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UpdateResultServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UpdateStatusCoreSystemServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GSI.BusinessRuleCore\GSI.BusinessRuleCore.csproj">
+      <Project>{451F06B7-2E49-46A0-AF9C-C0F12B7FFF0B}</Project>
+      <Name>GSI.BusinessRuleCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSI.Common\GSI.Common.csproj">
+      <Project>{AA7049EA-3CD0-4786-95E5-664C333D0D57}</Project>
+      <Name>GSI.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSI.DataMapping\GSI.DataMapping.csproj">
+      <Project>{70BA38EC-724E-42AF-B45E-F9F2ECC94564}</Project>
+      <Name>GSI.DataMapping</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\UpdateCPStatusServiceReference\" />
+    <WCFMetadataStorage Include="Service References\UpdateResultServiceReference\" />
+    <WCFMetadataStorage Include="Service References\UpdateStatusCoreSystemServiceReference\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12529</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

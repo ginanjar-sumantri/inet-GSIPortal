@@ -1,0 +1,191 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="GSIWebsiteCore.Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <script type="text/javascript" src="contents/jQuery/jquery.toastmessage.js">
+    </script>
+    <script type="text/javascript" src="contents/jQuery/jquery-1.4.4.js">
+    </script>
+    <script type="text/javascript" src="contents/jQuery/jquery-1.4.4.min.js">
+    </script>
+    <link href="contents/css/MainStyleSheet.css" type="text/css" rel="stylesheet" />
+    <link href="contents/jQuery/resources/css/jquery.toastmessage.css" type="text/css"
+        rel="stylesheet" />
+    <link href="contents/css/style.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="contents/javascripts/JScript.js"></script>
+    <asp:ContentPlaceHolder ID="HeadContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+    <title></title>
+</head>
+<body id="bodyMaster">
+    <div class="top">
+        <form id="form1" runat="server">
+        <div class="container">
+            <div>
+                <div id="logo">
+                </div>
+                <div id="CompanyName">
+                    <div id="CompanyNameText">
+                        CORE SYSTEM
+                    </div>
+                    <div id="Tanggal">
+                        <asp:Label ID="TanggalLabel" runat="server"></asp:Label>
+                    </div>
+                    <div id="icon">
+                        <div style="margin: 9px; margin-left: 90px; margin-top: 5px;">
+                            <div style="float: left;">
+                                <asp:ImageButton ID="HomeButton" runat="server" ToolTip="Home" /></div>
+                            <%--<div style="float: left;">
+                                <asp:LoginStatus ID="LogOutButton" runat="server" LoginText="" />
+                            </div>--%>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear: both;">
+                </div>
+            </div>
+            <div id="label" style="font-size: 10pt; font-weight: bold; margin-bottom: 10px">
+                Welcome,
+                <asp:Literal ID="userLiteral" runat="server"></asp:Literal>
+            </div>
+            <div id="mainleftblock" runat="server" style="float: left; width: 200px;">
+                <table cellpadding="0" cellspacing="5" width="0" border="0">
+                    <tr>
+                        <td class="parentlist">
+                            SURVEYPOINT
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="Survey Point List" ID="ListSurveyPointLink" runat="server" NavigateUrl="~/SurveyPoint/ListSurveyPoint.aspx"></asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="Work Order List" ID="ListWorkOrderLink" runat="server" NavigateUrl="~/WorkOrder/ListWorkOrder.aspx"></asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="parentlist">
+                            CONFIGURATION
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="Employee" ID="ListEmployeLink" runat="server" NavigateUrl="~/Employee/ListEmployee.aspx"></asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="Surveyor" ID="ListSurveyorlLink" runat="server" NavigateUrl="~/Surveyor/Surveyor.aspx"></asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="Region" ID="ListRegionLink" runat="server" NavigateUrl="~/Region/ListRegion.aspx"></asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="ZipCode" ID="ListRegionForZipCodeLink" runat="server" NavigateUrl="~/ZipCode/ListRegion.aspx"></asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="Brand" ID="ListBrandLink" runat="server" NavigateUrl="~/Brand/ListBrand.aspx"></asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="Battery" ID="ListBatteryLink" runat="server" NavigateUrl="~/Battery/ListBattery.aspx"></asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="Operator" ID="OperatorLink" runat="server" NavigateUrl="~/Operator/ListOperator.aspx"></asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="SIM Card" ID="ListSimCardLink" runat="server" NavigateUrl="~/SIMCard/ListSIMCard.aspx"></asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="Gadget" ID="ListGadgetLink" runat="server" NavigateUrl="~/Gadget/ListGadget.aspx"></asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="Document Type" ID="ListDocumentTypeLink" runat="server" NavigateUrl="~/DocumentType/ListDocumentType.aspx"></asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="parentlist">
+                            CUSTOMER MANAGEMENT
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="Customer" ID="CustomerLink" runat="server" NavigateUrl="~/Customer/Customer.aspx"></asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="Customer User" ID="CustomerUserLink" runat="server" NavigateUrl="~/CustomerUser/CustomerUser.aspx"></asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="parentlist">
+                            DASHBOARD
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="Dashboard Monitor" ID="DashboardLink" runat="server"></asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="parentlist">
+                            REPORT
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="Report GSI" ID="ReportLink" runat="server" NavigateUrl="~/Report/ReportGSI.aspx"></asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="parentlist">
+                            SETTING
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="User" ID="SettingLink" runat="server" NavigateUrl="~/User/ListUser.aspx"></asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="User History" ID="UserHistoryLink" runat="server" NavigateUrl="~/UserHistory/ListUserHistory.aspx"></asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="childlist">
+                            <asp:HyperLink Text="Permission" ID="PermissionLink" runat="server" NavigateUrl=""></asp:HyperLink>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="mainrightblock" runat="server">
+                <asp:ContentPlaceHolder ID="BodyContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        </form>
+    </div>
+    <div class="Masterfooter">
+    </div>
+</body>
+</html>

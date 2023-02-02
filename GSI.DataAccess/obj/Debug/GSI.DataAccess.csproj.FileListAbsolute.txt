@@ -1,0 +1,14 @@
+D:\GSI\GSIPortal\GSI.DataAccess\bin\Debug\GSI.DataAccess.dll
+D:\GSI\GSIPortal\GSI.DataAccess\bin\Debug\GSI.DataAccess.pdb
+D:\GSI\GSIPortal\GSI.DataAccess\bin\Debug\GSI.BusinessEntity.dll
+D:\GSI\GSIPortal\GSI.DataAccess\bin\Debug\GSI.BusinessEntity.pdb
+D:\GSI\GSIPortal\GSI.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+D:\GSI\GSIPortal\GSI.DataAccess\obj\Debug\GSI.DataAccess.dll
+D:\GSI\GSIPortal\GSI.DataAccess\obj\Debug\GSI.DataAccess.pdb
+E:\GSIPortal\GSI.DataAccess\bin\Debug\GSI.DataAccess.dll
+E:\GSIPortal\GSI.DataAccess\bin\Debug\GSI.DataAccess.pdb
+E:\GSIPortal\GSI.DataAccess\bin\Debug\GSI.BusinessEntity.dll
+E:\GSIPortal\GSI.DataAccess\bin\Debug\GSI.BusinessEntity.pdb
+E:\GSIPortal\GSI.DataAccess\obj\Debug\GSI.DataAccess.dll
+E:\GSIPortal\GSI.DataAccess\obj\Debug\GSI.DataAccess.pdb
+E:\GSIPortal\GSI.DataAccess\obj\Debug\GSI.DataAccess.csprojResolveAssemblyReference.cache

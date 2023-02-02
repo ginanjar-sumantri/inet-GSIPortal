@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DataSourceCoreSystem">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=192.168.88.3;Initial Catalog=CoreSystem</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>27d5248a-13e4-4b2d-ae6c-838d2d2bd128</DataSourceID>
+</RptDataSource>

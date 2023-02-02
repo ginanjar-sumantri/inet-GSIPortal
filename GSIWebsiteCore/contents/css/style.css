@@ -1,0 +1,351 @@
+#bodyMaster
+{
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    background-image: url(/contents/images/Bg_headerMaster.png);
+    background-repeat: repeat-x;
+}
+
+#bodyMaster
+{
+    font: 100.01% Verdana,Arial,Helvetica,sans-serif;
+    color: #333;
+    padding: 0;
+}
+
+.container
+{
+    margin: 0 auto;
+    width: 984px;
+    position: relative;
+}
+
+#logo
+{
+    background-image: url(/contents/images/login/logoGSI.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 105px;
+    float: left;
+    margin-top: 6px;
+}
+#CompanyName
+{
+    float: left;
+    background-image: url(/contents/images/companyname_master.png);
+    width: 360px;
+    height: 0px;
+    background-repeat: no-repeat;
+    margin-left: 518px;
+    padding-top: 26px;
+    margin-top: 17px;
+    background-position: right;
+}
+#CompanyNameText
+{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+}
+#Tanggal
+{
+    float: left;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 71px;
+    margin-top: 24px;
+    text-align: left;
+    margin-left: 60px;
+}
+#icon
+{
+    background-image: url(/contents/images/bg_icon_master.png);
+    background-repeat: no-repeat;
+    height: 34px;
+    float: left;
+    height: 34px;
+    margin-left: -86px;
+    margin-top: 13px;
+    width: 199px;
+}
+/*#HomeButton
+{
+    background-image: url(/contents/images/icon_home_master.png);
+    background-repeat: no-repeat;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    margin: 1px;
+}*/
+#ProfileButton
+{
+    background-image: url(/contents/images/icon_profile_master.png);
+    background-repeat: no-repeat;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    margin: 1px;
+}
+#DocumentButton
+{
+    background-image: url(/contents/images/icon_folder_master.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    margin: 1px;
+}
+#SettingButton
+{
+    background-image: url(/contents/images/icon_setting_master.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    margin: 1px;
+}
+#LogOutButton
+{
+    background-image: url(/contents/images/icon_logout_master.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    width: 66px;
+    height: 24px;
+    line-height: 0;
+    outline: none;
+    text-indent: -999px;
+    margin: 1px;
+}
+
+.top
+{
+    min-height: 100%;
+}
+
+.rootnode
+{
+    background-color: #030A5D;
+    font-size: 9pt;
+    width: 180px;
+    font-weight: bold;
+    border-bottom: 1px solid #FFFFFF;
+    border-radius: 2px;
+}
+
+.leafnode
+{
+    background-color: #CCCCCC;
+    font-size: 8pt;
+    width: 160px;
+    border-bottom: 1px solid #FFFFFF;
+    letter-spacing: -1px;
+}
+
+.Masterfooter
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    background: url(../images/loginPageBorder.jpg) repeat-x left bottom;
+}
+
+#mainleftblock a
+{
+    width: 230px;
+    font-size: 8pt;
+    color: #030A5D;
+    text-decoration: none;
+    padding-left: 9px;
+}
+
+.parentlist
+{
+    width: 230px;
+    height: 25px;
+    background: #030A5D;
+    font-size: 9pt;
+    font-weight: bold;
+    color: White;
+    border-radius: 2px;
+    padding-left: 5px;
+}
+
+.childlist
+{
+    height: 25px;
+    background: #CCCCCC;
+    border-radius: 2px;
+}
+
+/*view order*/
+
+
+.formTextColor
+{
+    padding-left: 10px;
+    background-color: #030A5D;
+    width: 120px;
+    font-family: Arial;
+    font-size: 9pt;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 25px;
+}
+.formTextColorMod
+{
+    padding-left: 10px;
+    width: 120px;
+    font-family: Arial;
+    font-size: 9pt;
+    font-weight: bold;
+    color: #000000;
+    line-height: 25px;
+}
+.formLabelColor
+{
+    padding-left: 10px;
+    background-color: #CCCCCC;
+    font-family: Arial;
+    font-size: 9pt;
+    font-weight: bold;
+    color: Black;
+    width: 253px;
+    line-height: 25px;
+}
+.Multiline
+{
+    padding-left: 10px;
+    background-color: #CCCCCC;
+    font-family: Arial;
+    font-size: 9pt;
+    font-weight: bold;
+    color: Black;
+    line-height: 25px;
+    border: none;
+}
+
+
+/* end view order*/
+
+/*OrderConfirmation*/
+
+/* view add survey point Office*/
+.fontColor
+{
+    color: #808080;
+}
+
+.fontColor2
+{
+    font-weight: bold;
+    color: White;
+}
+.TextBox
+{
+    border: 1px Solid #CCCCCC;
+    height: 22px;
+    width: 300px;
+}
+
+.PageLiteral
+{
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12pt;
+    color: #030A5D;
+    font-style: italic;
+}
+
+/*View Result Personal*/
+.formTextColor
+{
+    background: #2F3DA5;
+}
+.clueLabel
+{
+    background: #666666;
+}
+.formTextResult
+{
+    font-size: 10pt;
+    font-weight: bold;
+    font-style: italic;
+    color: #2F3DA5;
+}
+
+.warning
+{
+    color: Red;
+}
+
+.formTextColorUser
+{
+    padding-left: 10px;
+    background-color: #2F3DA5;
+    width: 150px;
+    font-family: Arial;
+    font-size: 9pt;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 25px;
+}
+
+.HintFont 
+{
+    font-size: 10pt;
+    color: #303030;
+}
+
+.Dashboard
+{
+    width: 15px;
+    height: 15px;
+    float:left;
+    margin-top:1px;
+}
+
+.PreSurvey
+{
+    background-color: #E6E6E6;
+}
+.Survey
+{
+    background-color: #CCCCCC;
+}
+.AfterSurvey
+{
+    background-color: #999999;
+}

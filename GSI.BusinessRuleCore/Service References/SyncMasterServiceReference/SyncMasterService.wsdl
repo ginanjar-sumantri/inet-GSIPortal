@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SyncMasterService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:4893/SyncMasterService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:4893/SyncMasterService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:4893/SyncMasterService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/GSI.WCFToCustomerPortal" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISyncMasterService_UpdateMsRegion_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMsRegion" />
+  </wsdl:message>
+  <wsdl:message name="ISyncMasterService_UpdateMsRegion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMsRegionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISyncMasterService_UpdateMsCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMsCustomer" />
+  </wsdl:message>
+  <wsdl:message name="ISyncMasterService_UpdateMsCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMsCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISyncMasterService_UpdateMsCustomerUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMsCustomerUser" />
+  </wsdl:message>
+  <wsdl:message name="ISyncMasterService_UpdateMsCustomerUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMsCustomerUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISyncMasterService_UpdateMsRegionZipCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMsRegionZipCode" />
+  </wsdl:message>
+  <wsdl:message name="ISyncMasterService_UpdateMsRegionZipCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMsRegionZipCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISyncMasterService_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="ISyncMasterService_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISyncMasterService_GetListGenLoginHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListGenLoginHistory" />
+  </wsdl:message>
+  <wsdl:message name="ISyncMasterService_GetListGenLoginHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListGenLoginHistoryResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISyncMasterService">
+    <wsdl:operation name="UpdateMsRegion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISyncMasterService/UpdateMsRegion" message="tns:ISyncMasterService_UpdateMsRegion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISyncMasterService/UpdateMsRegionResponse" message="tns:ISyncMasterService_UpdateMsRegion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMsCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISyncMasterService/UpdateMsCustomer" message="tns:ISyncMasterService_UpdateMsCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISyncMasterService/UpdateMsCustomerResponse" message="tns:ISyncMasterService_UpdateMsCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMsCustomerUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISyncMasterService/UpdateMsCustomerUser" message="tns:ISyncMasterService_UpdateMsCustomerUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISyncMasterService/UpdateMsCustomerUserResponse" message="tns:ISyncMasterService_UpdateMsCustomerUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMsRegionZipCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISyncMasterService/UpdateMsRegionZipCode" message="tns:ISyncMasterService_UpdateMsRegionZipCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISyncMasterService/UpdateMsRegionZipCodeResponse" message="tns:ISyncMasterService_UpdateMsRegionZipCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISyncMasterService/DoWork" message="tns:ISyncMasterService_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISyncMasterService/DoWorkResponse" message="tns:ISyncMasterService_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListGenLoginHistory">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISyncMasterService/GetListGenLoginHistory" message="tns:ISyncMasterService_GetListGenLoginHistory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISyncMasterService/GetListGenLoginHistoryResponse" message="tns:ISyncMasterService_GetListGenLoginHistory_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISyncMasterService" type="tns:ISyncMasterService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdateMsRegion">
+      <soap:operation soapAction="http://tempuri.org/ISyncMasterService/UpdateMsRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMsCustomer">
+      <soap:operation soapAction="http://tempuri.org/ISyncMasterService/UpdateMsCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMsCustomerUser">
+      <soap:operation soapAction="http://tempuri.org/ISyncMasterService/UpdateMsCustomerUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMsRegionZipCode">
+      <soap:operation soapAction="http://tempuri.org/ISyncMasterService/UpdateMsRegionZipCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/ISyncMasterService/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListGenLoginHistory">
+      <soap:operation soapAction="http://tempuri.org/ISyncMasterService/GetListGenLoginHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SyncMasterService">
+    <wsdl:port name="BasicHttpBinding_ISyncMasterService" binding="tns:BasicHttpBinding_ISyncMasterService">
+      <soap:address location="http://localhost:4893/SyncMasterService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

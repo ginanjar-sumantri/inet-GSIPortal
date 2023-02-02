@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{062D7DD9-6814-4366-BBFF-7E8CFD816DB9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GSI.BusinessEntity</RootNamespace>
+    <AssemblyName>GSI.BusinessEntity</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base.cs" />
+    <Compile Include="BusinessEntities\MsSurveyorZipCode.cs" />
+    <Compile Include="BusinessEntities\TrOrderSPLog.cs" />
+    <Compile Include="BusinessEntities\MsRegionZipCode.cs" />
+    <Compile Include="BusinessEntities\Gen_LoginHistory.cs" />
+    <Compile Include="BusinessEntities\CustomEntities.cs" />
+    <Compile Include="BusinessEntities\GlobalSetting.cs" />
+    <Compile Include="BusinessEntities\MailboxInbox.cs" />
+    <Compile Include="BusinessEntities\MailboxOutbox.cs" />
+    <Compile Include="BusinessEntities\Mapper_Gadget_Battery.cs" />
+    <Compile Include="BusinessEntities\Mapper_OrderType_SurveyPoint.cs" />
+    <Compile Include="BusinessEntities\Mapper_SurveyPoint_DocType.cs" />
+    <Compile Include="BusinessEntities\MsBattery.cs" />
+    <Compile Include="BusinessEntities\MsBrand.cs" />
+    <Compile Include="BusinessEntities\MsBusinessType.cs" />
+    <Compile Include="BusinessEntities\MsCustomer.cs" />
+    <Compile Include="BusinessEntities\MsCustomerUser.cs" />
+    <Compile Include="BusinessEntities\MsDocumentType.cs" />
+    <Compile Include="BusinessEntities\MsEmployee.cs" />
+    <Compile Include="BusinessEntities\MsGadget.cs" />
+    <Compile Include="BusinessEntities\MsOperator.cs" />
+    <Compile Include="BusinessEntities\MsOrderType.cs" />
+    <Compile Include="BusinessEntities\MsRegion.cs" />
+    <Compile Include="BusinessEntities\MsSIMCard.cs" />
+    <Compile Include="BusinessEntities\MsStatus.cs" />
+    <Compile Include="BusinessEntities\MsSurveyor.cs" />
+    <Compile Include="BusinessEntities\MsSurveyPoint.cs" />
+    <Compile Include="BusinessEntities\TrOrder.cs" />
+    <Compile Include="BusinessEntities\TrOrderSPMovable.cs" />
+    <Compile Include="BusinessEntities\TrOrderSPNotMovable.cs" />
+    <Compile Include="BusinessEntities\TrReqDocMovable.cs" />
+    <Compile Include="BusinessEntities\TrReqDocNotMovable.cs" />
+    <Compile Include="BusinessEntities\TrResultMovable.cs" />
+    <Compile Include="BusinessEntities\TrResultNotMovable.cs" />
+    <Compile Include="BusinessEntities\TrResultPhotoAdditionalMovable.cs" />
+    <Compile Include="BusinessEntities\TrResultPhotoAdditionalNotMovable.cs" />
+    <Compile Include="BusinessEntities\TrResultReqDocMovable.cs" />
+    <Compile Include="BusinessEntities\TrResultReqDocNotMovable.cs" />
+    <Compile Include="BusinessEntities\TrWorkFlowHistory.cs" />
+    <Compile Include="BusinessEntities\TrWorkOrderMovable.cs" />
+    <Compile Include="BusinessEntities\TrWorkOrderNotMovable.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

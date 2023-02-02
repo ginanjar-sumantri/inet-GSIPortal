@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4890/UpdateStatusService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/GSI.Common.Enum" />
+  <xs:element name="UpdateStatusCoreSystem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/GSI.Common.Enum" minOccurs="0" name="_prmSPType" type="q1:SurveyPointType" />
+        <xs:element minOccurs="0" name="_prmWorkOrderID" type="xs:long" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/GSI.Common.Enum" minOccurs="0" name="_prmStatus" type="q2:GSIInternalStatus" />
+        <xs:element minOccurs="0" name="_prmDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateStatusCoreSystemResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

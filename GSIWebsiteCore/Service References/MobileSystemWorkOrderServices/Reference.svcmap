@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8f3de556-c101-4655-85e1-f19cba355dd4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.88.6:55000/WorkOrder.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WorkOrder.xsd" MetadataType="Schema" ID="e54e882b-85df-4614-9cb3-19af13f0cbca" SourceId="1" SourceUrl="http://192.168.88.6:55000/WorkOrder.svc?xsd=xsd1" />
+    <MetadataFile FileName="WorkOrder.wsdl" MetadataType="Wsdl" ID="110de298-ff33-4975-9c33-535a4aebdd9c" SourceId="1" SourceUrl="http://192.168.88.6:55000/WorkOrder.svc?wsdl" />
+    <MetadataFile FileName="WorkOrder1.xsd" MetadataType="Schema" ID="6b8e3700-2417-4215-8aaf-fa4eaeb91a52" SourceId="1" SourceUrl="http://192.168.88.6:55000/WorkOrder.svc?xsd=xsd2" />
+    <MetadataFile FileName="WorkOrder2.xsd" MetadataType="Schema" ID="b8068c2b-9960-4328-94d1-ac88ef187fbb" SourceId="1" SourceUrl="http://192.168.88.6:55000/WorkOrder.svc?xsd=xsd0" />
+    <MetadataFile FileName="WorkOrder3.xsd" MetadataType="Schema" ID="3ab332fe-3b1f-4e9e-863e-b133a51ea1bf" SourceId="1" SourceUrl="http://192.168.88.6:55000/WorkOrder.svc?xsd=xsd3" />
+    <MetadataFile FileName="WorkOrder.disco" MetadataType="Disco" ID="17cac14b-8109-496f-808f-2f2280adb235" SourceId="1" SourceUrl="http://192.168.88.6:55000/WorkOrder.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

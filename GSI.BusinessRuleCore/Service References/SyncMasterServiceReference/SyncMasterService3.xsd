@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GSI.WCFToCustomerPortal" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GSI.WCFToCustomerPortal" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfMsRegion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MsRegion" nillable="true" type="tns:MsRegion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMsRegion" nillable="true" type="tns:ArrayOfMsRegion" />
+  <xs:complexType name="MsRegion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RegionCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegionID" type="xs:long" />
+      <xs:element minOccurs="0" name="RegionName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RowStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="Timestamp" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MsRegion" nillable="true" type="tns:MsRegion" />
+  <xs:complexType name="ArrayOfMsCustomer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MsCustomer" nillable="true" type="tns:MsCustomer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMsCustomer" nillable="true" type="tns:ArrayOfMsCustomer" />
+  <xs:complexType name="MsCustomer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BusinessTypeID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CurrCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerAddress1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerAddress2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerID" type="xs:long" />
+      <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="NPPKP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NPWP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NPWPAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimaryContactDepartment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimaryContactEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimaryContactHP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimaryContactName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimaryContactTitle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimaryDateOfBirth" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PrimaryGender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimaryPlaceOfBirth" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimayContactFax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimayContactPhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimayContactPhoneExtension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RowStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="SecondaryContactDepartment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SecondaryContactEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SecondaryContactFax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SecondaryContactHP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SecondaryContactName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SecondaryContactPhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SecondaryContactPhoneExtension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SecondaryContactTitle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SecondaryDateOfBirth" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SecondaryGender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SecondaryPlaceOfBirth" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Timestamp" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fgActive" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MsCustomer" nillable="true" type="tns:MsCustomer" />
+  <xs:complexType name="ArrayOfMsCustomerUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MsCustomerUser" nillable="true" type="tns:MsCustomerUser" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMsCustomerUser" nillable="true" type="tns:ArrayOfMsCustomerUser" />
+  <xs:complexType name="MsCustomerUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CustomerID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="CustomerUserID" type="xs:long" />
+      <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MembershipUserName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RowStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="Timestamp" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="UserEmailAddress" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MsCustomerUser" nillable="true" type="tns:MsCustomerUser" />
+  <xs:complexType name="ArrayOfMsRegionZipCode">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MsRegionZipCode" nillable="true" type="tns:MsRegionZipCode" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMsRegionZipCode" nillable="true" type="tns:ArrayOfMsRegionZipCode" />
+  <xs:complexType name="MsRegionZipCode">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RegionID" type="xs:long" />
+      <xs:element minOccurs="0" name="RegionZipCodeID" type="xs:long" />
+      <xs:element minOccurs="0" name="RowStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="Timestamp" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MsRegionZipCode" nillable="true" type="tns:MsRegionZipCode" />
+</xs:schema>

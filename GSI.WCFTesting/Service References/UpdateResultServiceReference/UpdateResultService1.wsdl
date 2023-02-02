@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UpdateResultService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:4890/UpdateResultService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:4890/UpdateResultService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:4890/UpdateResultService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IUpdateResultService_InsertResultMovableCoreSystemBundle_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertResultMovableCoreSystemBundle" />
+  </wsdl:message>
+  <wsdl:message name="IUpdateResultService_InsertResultMovableCoreSystemBundle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertResultMovableCoreSystemBundleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUpdateResultService_InsertResultMovableCoreSystem_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertResultMovableCoreSystem" />
+  </wsdl:message>
+  <wsdl:message name="IUpdateResultService_InsertResultMovableCoreSystem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertResultMovableCoreSystemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUpdateResultService_InsertResultPhotoAddtMovableCoreSystem_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertResultPhotoAddtMovableCoreSystem" />
+  </wsdl:message>
+  <wsdl:message name="IUpdateResultService_InsertResultPhotoAddtMovableCoreSystem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertResultPhotoAddtMovableCoreSystemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUpdateResultService_InsertResultReqDocMovableCoreSystem_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertResultReqDocMovableCoreSystem" />
+  </wsdl:message>
+  <wsdl:message name="IUpdateResultService_InsertResultReqDocMovableCoreSystem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertResultReqDocMovableCoreSystemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUpdateResultService_InsertResultNotMovableCoreSystemBundle_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertResultNotMovableCoreSystemBundle" />
+  </wsdl:message>
+  <wsdl:message name="IUpdateResultService_InsertResultNotMovableCoreSystemBundle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertResultNotMovableCoreSystemBundleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUpdateResultService_InsertResultNotMovableCoreSystem_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertResultNotMovableCoreSystem" />
+  </wsdl:message>
+  <wsdl:message name="IUpdateResultService_InsertResultNotMovableCoreSystem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertResultNotMovableCoreSystemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUpdateResultService_InsertResultPhotoAddtNotMovableCoreSystem_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertResultPhotoAddtNotMovableCoreSystem" />
+  </wsdl:message>
+  <wsdl:message name="IUpdateResultService_InsertResultPhotoAddtNotMovableCoreSystem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertResultPhotoAddtNotMovableCoreSystemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUpdateResultService_InsertResultReqDocNotMovableCoreSystem_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertResultReqDocNotMovableCoreSystem" />
+  </wsdl:message>
+  <wsdl:message name="IUpdateResultService_InsertResultReqDocNotMovableCoreSystem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertResultReqDocNotMovableCoreSystemResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IUpdateResultService">
+    <wsdl:operation name="InsertResultMovableCoreSystemBundle">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUpdateResultService/InsertResultMovableCoreSystemBundle" message="tns:IUpdateResultService_InsertResultMovableCoreSystemBundle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUpdateResultService/InsertResultMovableCoreSystemBundleResponse" message="tns:IUpdateResultService_InsertResultMovableCoreSystemBundle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertResultMovableCoreSystem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUpdateResultService/InsertResultMovableCoreSystem" message="tns:IUpdateResultService_InsertResultMovableCoreSystem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUpdateResultService/InsertResultMovableCoreSystemResponse" message="tns:IUpdateResultService_InsertResultMovableCoreSystem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertResultPhotoAddtMovableCoreSystem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUpdateResultService/InsertResultPhotoAddtMovableCoreSystem" message="tns:IUpdateResultService_InsertResultPhotoAddtMovableCoreSystem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUpdateResultService/InsertResultPhotoAddtMovableCoreSystemResponse" message="tns:IUpdateResultService_InsertResultPhotoAddtMovableCoreSystem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertResultReqDocMovableCoreSystem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUpdateResultService/InsertResultReqDocMovableCoreSystem" message="tns:IUpdateResultService_InsertResultReqDocMovableCoreSystem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUpdateResultService/InsertResultReqDocMovableCoreSystemResponse" message="tns:IUpdateResultService_InsertResultReqDocMovableCoreSystem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertResultNotMovableCoreSystemBundle">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUpdateResultService/InsertResultNotMovableCoreSystemBundle" message="tns:IUpdateResultService_InsertResultNotMovableCoreSystemBundle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUpdateResultService/InsertResultNotMovableCoreSystemBundleResponse" message="tns:IUpdateResultService_InsertResultNotMovableCoreSystemBundle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertResultNotMovableCoreSystem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUpdateResultService/InsertResultNotMovableCoreSystem" message="tns:IUpdateResultService_InsertResultNotMovableCoreSystem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUpdateResultService/InsertResultNotMovableCoreSystemResponse" message="tns:IUpdateResultService_InsertResultNotMovableCoreSystem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertResultPhotoAddtNotMovableCoreSystem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUpdateResultService/InsertResultPhotoAddtNotMovableCoreSystem" message="tns:IUpdateResultService_InsertResultPhotoAddtNotMovableCoreSystem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUpdateResultService/InsertResultPhotoAddtNotMovableCoreSystemResponse" message="tns:IUpdateResultService_InsertResultPhotoAddtNotMovableCoreSystem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertResultReqDocNotMovableCoreSystem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUpdateResultService/InsertResultReqDocNotMovableCoreSystem" message="tns:IUpdateResultService_InsertResultReqDocNotMovableCoreSystem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUpdateResultService/InsertResultReqDocNotMovableCoreSystemResponse" message="tns:IUpdateResultService_InsertResultReqDocNotMovableCoreSystem_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IUpdateResultService" type="tns:IUpdateResultService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertResultMovableCoreSystemBundle">
+      <soap:operation soapAction="http://tempuri.org/IUpdateResultService/InsertResultMovableCoreSystemBundle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertResultMovableCoreSystem">
+      <soap:operation soapAction="http://tempuri.org/IUpdateResultService/InsertResultMovableCoreSystem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertResultPhotoAddtMovableCoreSystem">
+      <soap:operation soapAction="http://tempuri.org/IUpdateResultService/InsertResultPhotoAddtMovableCoreSystem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertResultReqDocMovableCoreSystem">
+      <soap:operation soapAction="http://tempuri.org/IUpdateResultService/InsertResultReqDocMovableCoreSystem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertResultNotMovableCoreSystemBundle">
+      <soap:operation soapAction="http://tempuri.org/IUpdateResultService/InsertResultNotMovableCoreSystemBundle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertResultNotMovableCoreSystem">
+      <soap:operation soapAction="http://tempuri.org/IUpdateResultService/InsertResultNotMovableCoreSystem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertResultPhotoAddtNotMovableCoreSystem">
+      <soap:operation soapAction="http://tempuri.org/IUpdateResultService/InsertResultPhotoAddtNotMovableCoreSystem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertResultReqDocNotMovableCoreSystem">
+      <soap:operation soapAction="http://tempuri.org/IUpdateResultService/InsertResultReqDocNotMovableCoreSystem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UpdateResultService">
+    <wsdl:port name="BasicHttpBinding_IUpdateResultService" binding="tns:BasicHttpBinding_IUpdateResultService">
+      <soap:address location="http://localhost:4890/UpdateResultService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

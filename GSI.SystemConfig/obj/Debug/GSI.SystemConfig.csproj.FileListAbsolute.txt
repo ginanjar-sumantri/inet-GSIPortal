@@ -1,0 +1,11 @@
+D:\GSI\GSIPortal\GSI.SystemConfig\bin\Debug\GSI.SystemConfig.dll.config
+D:\GSI\GSIPortal\GSI.SystemConfig\bin\Debug\GSI.SystemConfig.dll
+D:\GSI\GSIPortal\GSI.SystemConfig\bin\Debug\GSI.SystemConfig.pdb
+D:\GSI\GSIPortal\GSI.SystemConfig\obj\Debug\ResolveAssemblyReference.cache
+D:\GSI\GSIPortal\GSI.SystemConfig\obj\Debug\GSI.SystemConfig.dll
+D:\GSI\GSIPortal\GSI.SystemConfig\obj\Debug\GSI.SystemConfig.pdb
+E:\GSIPortal\GSI.SystemConfig\bin\Debug\GSI.SystemConfig.dll.config
+E:\GSIPortal\GSI.SystemConfig\bin\Debug\GSI.SystemConfig.dll
+E:\GSIPortal\GSI.SystemConfig\bin\Debug\GSI.SystemConfig.pdb
+E:\GSIPortal\GSI.SystemConfig\obj\Debug\GSI.SystemConfig.dll
+E:\GSIPortal\GSI.SystemConfig\obj\Debug\GSI.SystemConfig.pdb

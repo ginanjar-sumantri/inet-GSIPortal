@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="TrOrder">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CustomerID" type="xs:long" />
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="OrderCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="OrderID" type="xs:long" />
+      <xs:element minOccurs="0" name="OrderStatus" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="OrderTypeID" type="xs:long" />
+      <xs:element minOccurs="0" name="OrderVersion" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="ProceedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RowStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="Timestamp" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrOrder" nillable="true" type="tns:TrOrder" />
+  <xs:complexType name="ArrayOfTrOrderSPMovable">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrOrderSPMovable" nillable="true" type="tns:TrOrderSPMovable" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrOrderSPMovable" nillable="true" type="tns:ArrayOfTrOrderSPMovable" />
+  <xs:complexType name="TrOrderSPMovable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BusinessLine" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CancelStatus" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="Clue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateOfBirth" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Extension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FgComplaint" type="xs:boolean" />
+      <xs:element minOccurs="0" name="HomeAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HomePhoneNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IDAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IDNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IDType" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="JobTitle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JobType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MaritalStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MobilePhoneNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Nationality" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderID" type="xs:long" />
+      <xs:element minOccurs="0" name="OrderSPMovableID" type="xs:long" />
+      <xs:element minOccurs="0" name="OriginatorID" type="xs:long" />
+      <xs:element minOccurs="0" name="PlaceOfBirth" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegionID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RemarkCancel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RemarkComplaint" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RowStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="SPStatus" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="SpouseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SurveyPointID" type="xs:long" />
+      <xs:element minOccurs="0" name="SurveyPointName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Timestamp" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="UserTakeOver" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrOrderSPMovable" nillable="true" type="tns:TrOrderSPMovable" />
+  <xs:complexType name="ArrayOfTrOrderSPNotMovable">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrOrderSPNotMovable" nillable="true" type="tns:TrOrderSPNotMovable" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrOrderSPNotMovable" nillable="true" type="tns:ArrayOfTrOrderSPNotMovable" />
+  <xs:complexType name="TrOrderSPNotMovable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BusinessTypeID" type="xs:long" />
+      <xs:element minOccurs="0" name="CancelStatus" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="Clue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContactNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Extension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FgComplaint" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="OrderID" type="xs:long" />
+      <xs:element minOccurs="0" name="OrderSPNotMovableID" type="xs:long" />
+      <xs:element minOccurs="0" name="OriginatorID" type="xs:long" />
+      <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegionID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RemarkCancel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RemarkComplaint" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RowStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="SPStatus" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="SurveyPointID" type="xs:long" />
+      <xs:element minOccurs="0" name="SurveyPointName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Timestamp" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="UserTakeOver" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrOrderSPNotMovable" nillable="true" type="tns:TrOrderSPNotMovable" />
+  <xs:complexType name="ArrayOfTrReqDocMovable">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrReqDocMovable" nillable="true" type="tns:TrReqDocMovable" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrReqDocMovable" nillable="true" type="tns:ArrayOfTrReqDocMovable" />
+  <xs:complexType name="TrReqDocMovable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DocumentTypeID" type="xs:long" />
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="OrderSPMovableID" type="xs:long" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReqDocMovableID" type="xs:long" />
+      <xs:element minOccurs="0" name="RowStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="Timestamp" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrReqDocMovable" nillable="true" type="tns:TrReqDocMovable" />
+  <xs:complexType name="ArrayOfTrReqDocNotMovable">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrReqDocNotMovable" nillable="true" type="tns:TrReqDocNotMovable" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrReqDocNotMovable" nillable="true" type="tns:ArrayOfTrReqDocNotMovable" />
+  <xs:complexType name="TrReqDocNotMovable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DocumentTypeID" type="xs:long" />
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="OrderSPNotMovableID" type="xs:long" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReqDocNotMovableID" type="xs:long" />
+      <xs:element minOccurs="0" name="RowStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="Timestamp" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrReqDocNotMovable" nillable="true" type="tns:TrReqDocNotMovable" />
+  <xs:complexType name="ArrayOfTrOrderSPLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrOrderSPLog" nillable="true" type="tns:TrOrderSPLog" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrOrderSPLog" nillable="true" type="tns:ArrayOfTrOrderSPLog" />
+  <xs:complexType name="TrOrderSPLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Duration" type="xs:int" />
+      <xs:element minOccurs="0" name="EmployeeID" type="xs:long" />
+      <xs:element minOccurs="0" name="LogID" type="xs:long" />
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="OrderSPID" type="xs:long" />
+      <xs:element minOccurs="0" name="RowStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="Status" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="SurveyPointType" type="xs:long" />
+      <xs:element minOccurs="0" name="Timestamp" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="TypeProcess" type="xs:unsignedByte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrOrderSPLog" nillable="true" type="tns:TrOrderSPLog" />
+</xs:schema>

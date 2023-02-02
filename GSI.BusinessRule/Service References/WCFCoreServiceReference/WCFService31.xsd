@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4890/WCFService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" />
+  <xs:element name="UpdateToCoreSystem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" minOccurs="0" name="_trOrder" nillable="true" type="q1:TrOrder" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" minOccurs="0" name="_trOrderSPMovable" nillable="true" type="q2:ArrayOfTrOrderSPMovable" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" minOccurs="0" name="_trOrderSPNotMovable" nillable="true" type="q3:ArrayOfTrOrderSPNotMovable" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" minOccurs="0" name="_trReqDocMovable" nillable="true" type="q4:ArrayOfTrReqDocMovable" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" minOccurs="0" name="_trReqDocNotMovable" nillable="true" type="q5:ArrayOfTrReqDocNotMovable" />
+        <xs:element minOccurs="0" name="_prmErr" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateToCoreSystemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateToCoreSystemResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_prmErr" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ComplaintResultNotMovable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" minOccurs="0" name="_trOrderSPNotMovable" nillable="true" type="q6:TrOrderSPNotMovable" />
+        <xs:element minOccurs="0" name="_prmErr" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ComplaintResultNotMovableResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ComplaintResultNotMovableResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_prmErr" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ComplaintResultMovable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" minOccurs="0" name="_trOrderSPMovable" nillable="true" type="q7:TrOrderSPMovable" />
+        <xs:element minOccurs="0" name="_prmErr" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ComplaintResultMovableResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ComplaintResultMovableResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_prmErr" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrOrderSPLogByOrderIDSurveyPointType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_prmOrderSPID" type="xs:long" />
+        <xs:element minOccurs="0" name="_prmSurveyPointType" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrOrderSPLogByOrderIDSurveyPointTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" minOccurs="0" name="GetListTrOrderSPLogByOrderIDSurveyPointTypeResult" nillable="true" type="q8:ArrayOfTrOrderSPLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

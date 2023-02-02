@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GSI.WCFToCoreSystem" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="TrResultMovable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BuildingArea" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EnvironmentalConditions" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HouseStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LengthOfStay" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PersonalCharacter" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResidenceConditions" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResultMovableID" type="xs:long" />
+      <xs:element minOccurs="0" name="RowStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="Timestamp" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="WorkOrderMovableID" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrResultMovable" nillable="true" type="tns:TrResultMovable" />
+  <xs:complexType name="ArrayOfTrResultPhotoAdditionalMovable">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrResultPhotoAdditionalMovable" nillable="true" type="tns:TrResultPhotoAdditionalMovable" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrResultPhotoAdditionalMovable" nillable="true" type="tns:ArrayOfTrResultPhotoAdditionalMovable" />
+  <xs:complexType name="TrResultPhotoAdditionalMovable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ImageGuid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Latitude" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Longitude" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PhotoName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResultMovableID" type="xs:long" />
+      <xs:element minOccurs="0" name="ResultPhotoAdditionalMovableID" type="xs:long" />
+      <xs:element minOccurs="0" name="RowStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="Timestamp" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="UploadDate" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrResultPhotoAdditionalMovable" nillable="true" type="tns:TrResultPhotoAdditionalMovable" />
+  <xs:complexType name="ArrayOfTrResultReqDocMovable">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrResultReqDocMovable" nillable="true" type="tns:TrResultReqDocMovable" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrResultReqDocMovable" nillable="true" type="tns:ArrayOfTrResultReqDocMovable" />
+  <xs:complexType name="TrResultReqDocMovable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ImageGuid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Latitude" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Longitude" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PhotoName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReqDocMovableID" type="xs:long" />
+      <xs:element minOccurs="0" name="ResultMovableID" type="xs:long" />
+      <xs:element minOccurs="0" name="ResultReqDocMovableID" type="xs:long" />
+      <xs:element minOccurs="0" name="RowStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="Timestamp" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="UploadDate" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrResultReqDocMovable" nillable="true" type="tns:TrResultReqDocMovable" />
+  <xs:complexType name="TrResultNotMovable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompanyCondition" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyPeriod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Position" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResultNotMovableID" type="xs:long" />
+      <xs:element minOccurs="0" name="RowStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="Timestamp" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="WorkOrderNotMovableID" type="xs:long" />
+      <xs:element minOccurs="0" name="WorkingPeriod" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrResultNotMovable" nillable="true" type="tns:TrResultNotMovable" />
+  <xs:complexType name="ArrayOfTrResultPhotoAdditionalNotMovable">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrResultPhotoAdditionalNotMovable" nillable="true" type="tns:TrResultPhotoAdditionalNotMovable" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrResultPhotoAdditionalNotMovable" nillable="true" type="tns:ArrayOfTrResultPhotoAdditionalNotMovable" />
+  <xs:complexType name="TrResultPhotoAdditionalNotMovable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ImageGuid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Latitude" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Longitude" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PhotoName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResultNotMovableID" type="xs:long" />
+      <xs:element minOccurs="0" name="ResultPhotoAdditionalNotMovableID" type="xs:long" />
+      <xs:element minOccurs="0" name="RowStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="Timestamp" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="UploadDate" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrResultPhotoAdditionalNotMovable" nillable="true" type="tns:TrResultPhotoAdditionalNotMovable" />
+  <xs:complexType name="ArrayOfTrResultReqDocNotMovable">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrResultReqDocNotMovable" nillable="true" type="tns:TrResultReqDocNotMovable" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrResultReqDocNotMovable" nillable="true" type="tns:ArrayOfTrResultReqDocNotMovable" />
+  <xs:complexType name="TrResultReqDocNotMovable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ImageGuid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Latitude" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Longitude" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PhotoName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReqDocNotMovableID" type="xs:long" />
+      <xs:element minOccurs="0" name="ResultNotMovableID" type="xs:long" />
+      <xs:element minOccurs="0" name="ResultReqDocNotMovableID" type="xs:long" />
+      <xs:element minOccurs="0" name="RowStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="Timestamp" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="UploadDate" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrResultReqDocNotMovable" nillable="true" type="tns:TrResultReqDocNotMovable" />
+</xs:schema>

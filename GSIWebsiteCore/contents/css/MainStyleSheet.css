@@ -1,0 +1,191 @@
+﻿/* login */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html, body
+{
+    height: 100%;
+}
+.warningLiteral
+{
+    height: 100px;
+    line-height: 25px;
+    font-size: 8pt;
+    color: #333333;
+}
+.login_borderTop
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: url(../images/login/loginPageBorder.jpg) repeat-x left bottom;
+    background-image: url(../images/login/loginPageBorder.jpg);
+    z-index: 99;
+}
+.login_container
+{
+    min-height: 100%;
+}
+.login_borderBottom
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    background: url(../images/login/loginPageBorder.jpg) repeat-x left bottom;
+}
+.OuterLogin
+{
+    background: url(../images/login/loginShadow.jpg) no-repeat center bottom;
+    z-index: -99;
+}
+.OuterLoginHeader
+{
+    display: table;
+    table-layout: auto;
+    width: 45%;
+    height: 105px;
+}
+.OuterLoginHeaderLeft
+{
+    background: url(../images/login/logoGSI.png) no-repeat left center;
+    width: 120px;
+    height: 85px;
+    float: left;
+}
+.OuterLoginHeaderRight1
+{
+    height: 32px;
+}
+.OuterLoginHeaderRight2
+{
+    font-family: Arial Black;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 28px;
+    color: #030A5D;
+    letter-spacing: -2px;
+}
+.OuterLoginHeaderRight3
+{
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+}
+.OuterLoginBody
+{
+    height: 220px;
+    width: 45%;
+    margin: 0 auto;
+}
+.OuterLoginBodyWrapper
+{
+    margin: auto;
+}
+.OuterLoginBodyLeft
+{
+    background: url(../images/login/borderLoginBoxL.png) no-repeat left center transparent;
+    height: 219px;
+    width: 10px;
+    float: left;
+}
+.OuterLoginBodyMiddle
+{
+    background: url(../images/login/bodyLoginBox.jpg) repeat-x center center;
+    height: 219px;
+    width: 430px;
+    float: left;
+}
+.OuterLoginBodyRight
+{
+    background: url(../images/login/borderLoginBoxR.png) no-repeat right center;
+    height: 219px;
+    width: 10px;
+    float: left;
+}
+.OuterLoginFooter
+{
+    height: 40px;
+    width: 45%;
+}
+.login_text
+{
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: -1px;
+}
+.login_textWhite
+{
+    color: White;
+    font-size: 9px;
+    font-style: italic;
+    text-align: left;
+    text-decoration: none;
+    line-height: 20px;
+}
+.login_captcha
+{
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    background-color: #333333;
+    float: left;
+    height: 46px;
+}
+.login_captcha_right
+{
+    margin-left: 130px;
+}
+.login_captcha img
+{
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    margin: 3px 0px 0px 3px;
+}
+.btnRefreshCaptcha
+{
+    margin-right: 4px;
+    margin-bottom: 12px;
+}
+/* end login */
+
+.datatable_header
+{
+    background-color: #2F3DA5;
+    color: White;
+    font-size: 8pt;
+    line-height: 30px;
+}
+.datatable_body
+{
+    background-color: #CCCCCC;
+    color: Black;
+    font-size: 8pt;
+    line-height: 25px;
+}
+.datatable_header td
+{
+    padding: 0px 2px 0px 2px;
+}.datatable_body td
+{
+    padding: 0px 2px 0px 2px;
+}
+.line_separator
+{
+    height: 1px;
+    width: 100%;
+    background-color: #B3B3B3;
+}
+.QSearchLine
+{
+    line-height: 30px;
+}
+.pageHeight
+{
+    line-height: 20px;
+}

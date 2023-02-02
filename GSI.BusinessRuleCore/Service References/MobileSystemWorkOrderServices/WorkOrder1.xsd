@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GSI.MobileSystem.Service.Internal.BusinessEntity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GSI.MobileSystem.Service.Internal.BusinessEntity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.88.6:55000/WorkOrder.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/GSI.MobileSystem.Service.Internal" />
+  <xs:complexType name="WorkOrderData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BusinessFormName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Clue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JobTitle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JobType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LineBussines" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MaritalStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nationality" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OriginatorAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OriginatorClue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OriginatorJobTitle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OriginatorJobType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OriginatorLineBussines" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OriginatorMaritalStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OriginatorName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OriginatorNationality" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OriginatorRemark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OriginatorSpouseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OriginatorZipCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RemarkFromDispatcher" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RequiredDocument" nillable="true" type="tns:ArrayOfRequiredDocumentData" />
+      <xs:element minOccurs="0" name="SpouseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SurveyPointName" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/GSI.MobileSystem.Service.Internal" minOccurs="0" name="SurveyPointTemplateForm" type="q1:SurveyPointTemplateForm" />
+      <xs:element minOccurs="0" name="SurveyorCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SurveyorID" type="xs:long" />
+      <xs:element minOccurs="0" name="WorkOrderCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WorkOrderID" type="xs:long" />
+      <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WorkOrderData" nillable="true" type="tns:WorkOrderData" />
+  <xs:complexType name="ArrayOfRequiredDocumentData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RequiredDocumentData" nillable="true" type="tns:RequiredDocumentData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRequiredDocumentData" nillable="true" type="tns:ArrayOfRequiredDocumentData" />
+  <xs:complexType name="RequiredDocumentData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DocumentTypeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MobileRequiredDocumentID" type="xs:long" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RequiredDocumentData" nillable="true" type="tns:RequiredDocumentData" />
+</xs:schema>
